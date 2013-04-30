@@ -1,0 +1,519 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Powerstack » \Powerstack\Plugins\Memcached</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Powerstack</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Powerstack.html"><i class="icon-th"></i> Powerstack</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Powerstack.html"><i class="icon-folder-open"></i> Powerstack</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">59</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: __construct
+Create a new Powerstack\Plugins\Memcached object"><span class="description">__construct
+Create a new Powerstack\Plugins\Memcached object</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_add" title="add :: Add
+Add an item to memcached"><span class="description">Add
+Add an item to memcached</span><pre>add()</pre></a></li>
+<li class="method public "><a href="#method_addServer" title="addServer :: Add Server
+Add a server to the server pool"><span class="description">Add Server
+Add a server to the server pool</span><pre>addServer()</pre></a></li>
+<li class="method public "><a href="#method_addServers" title="addServers :: Add Servers
+Add multiple servers to the pool"><span class="description">Add Servers
+Add multiple servers to the pool</span><pre>addServers()</pre></a></li>
+<li class="method public "><a href="#method_append" title="append :: Append
+Append a string to a item already stored"><span class="description">Append
+Append a string to a item already stored</span><pre>append()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Delete
+Delete an item from memcached"><span class="description">Delete
+Delete an item from memcached</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_deleteMulti" title="deleteMulti :: Delete Multi
+Delete multiple items from memcached"><span class="description">Delete Multi
+Delete multiple items from memcached</span><pre>deleteMulti()</pre></a></li>
+<li class="method public "><a href="#method_flush" title="flush :: Flush
+Flush all values from memcached"><span class="description">Flush
+Flush all values from memcached</span><pre>flush()</pre></a></li>
+<li class="method public "><a href="#method_get" title="get :: Get
+Get an item from memcached"><span class="description">Get
+Get an item from memcached</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getAllKeys" title="getAllKeys :: Get All Keys
+Gets the keys stored on all the servers"><span class="description">Get All Keys
+Gets the keys stored on all the servers</span><pre>getAllKeys()</pre></a></li>
+<li class="method public "><a href="#method_getMulti" title="getMulti :: Get Multi
+Get multiple items from memcached"><span class="description">Get Multi
+Get multiple items from memcached</span><pre>getMulti()</pre></a></li>
+<li class="method public "><a href="#method_getResultCode" title="getResultCode :: Get Result Code
+Return the result code of the last operation"><span class="description">Get Result Code
+Return the result code of the last operation</span><pre>getResultCode()</pre></a></li>
+<li class="method public "><a href="#method_getResultMessage" title="getResultMessage :: Get Result Message
+Return the message describing the result of the last operation"><span class="description">Get Result Message
+Return the message describing the result of the last operation</span><pre>getResultMessage()</pre></a></li>
+<li class="method public "><a href="#method_replace" title="replace :: Replace
+Replace the item under an existing key"><span class="description">Replace
+Replace the item under an existing key</span><pre>replace()</pre></a></li>
+<li class="method public "><a href="#method_set" title="set :: Set
+Store an item"><span class="description">Set
+Store an item</span><pre>set()</pre></a></li>
+<li class="method public "><a href="#method_setMulti" title="setMulti :: Set Multi
+Store multiple items"><span class="description">Set Multi
+Store multiple items</span><pre>setMulti()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_conf" title="$conf :: "><span class="description"></span><pre>$conf</pre></a></li>
+<li class="property private "><a href="#property_memcached" title="$memcached :: "><span class="description"></span><pre>$memcached</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Powerstack\Plugins\Memcached"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Powerstack.html">Powerstack</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Powerstack.Plugins.html">Plugins</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Powerstack.Plugins.Memcached.html">Memcached</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct
+Create a new Powerstack\Plugins\Memcached object</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Configuration:
+  app/config.xml:
+      <plugins>
+          <memcached>
+              <servers>[Memcached servers (host:port[,host:port])]</servers>
+          </memcached>
+      </plugins></p></div></div></div>
+</div>
+<a id="method_add"></a><div class="element clickable method public method_add" data-toggle="collapse" data-target=".method_add .collapse">
+<h2>Add
+Add an item to memcached</h2>
+<pre>add(string $key, mixed $value, int $expire) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key to store item under</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Value to store</p></div>
+<div class="subelement argument">
+<h4>$expire</h4>
+<code>int</code><p>How long is the item valid for. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_addServer"></a><div class="element clickable method public method_addServer" data-toggle="collapse" data-target=".method_addServer .collapse">
+<h2>Add Server
+Add a server to the server pool</h2>
+<pre>addServer(string $host, int $port, int $weight) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$host</h4>
+<code>string</code><p>Hostname/IP of memcached server</p>
+</div>
+<div class="subelement argument">
+<h4>$port</h4>
+<code>int</code><p>Port memcached is running on</p></div>
+<div class="subelement argument">
+<h4>$weight</h4>
+<code>int</code><p>Server weight. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_addServers"></a><div class="element clickable method public method_addServers" data-toggle="collapse" data-target=".method_addServers .collapse">
+<h2>Add Servers
+Add multiple servers to the pool</h2>
+<pre>addServers(array $servers) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$servers</h4>
+<code>array</code><p>Array of server connection details</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_append"></a><div class="element clickable method public method_append" data-toggle="collapse" data-target=".method_append .collapse">
+<h2>Append
+Append a string to a item already stored</h2>
+<pre>append(string $key, string $value) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key item is stored under</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>String to append</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete
+Delete an item from memcached</h2>
+<pre>delete(string $key, int $time) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key to delete</p></div>
+<div class="subelement argument">
+<h4>$time</h4>
+<code>int</code><p>How long to wait before deleting item. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_deleteMulti"></a><div class="element clickable method public method_deleteMulti" data-toggle="collapse" data-target=".method_deleteMulti .collapse">
+<h2>Delete Multi
+Delete multiple items from memcached</h2>
+<pre>deleteMulti($keys, int $time) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$keys</h4></div>
+<div class="subelement argument">
+<h4>$time</h4>
+<code>int</code><p>How long to wait before deleting item. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_flush"></a><div class="element clickable method public method_flush" data-toggle="collapse" data-target=".method_flush .collapse">
+<h2>Flush
+Flush all values from memcached</h2>
+<pre>flush(int $delay) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$delay</h4>
+<code>int</code><p>Time to wait before flushing memcached. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
+<h2>Get
+Get an item from memcached</h2>
+<pre>get(string $key) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>value of key on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_getAllKeys"></a><div class="element clickable method public method_getAllKeys" data-toggle="collapse" data-target=".method_getAllKeys .collapse">
+<h2>Get All Keys
+Gets the keys stored on all the servers</h2>
+<pre>getAllKeys() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>keys stored on all the servers on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_getMulti"></a><div class="element clickable method public method_getMulti" data-toggle="collapse" data-target=".method_getMulti .collapse">
+<h2>Get Multi
+Get multiple items from memcached</h2>
+<pre>getMulti($keys) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$keys</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>array of found values on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_getResultCode"></a><div class="element clickable method public method_getResultCode" data-toggle="collapse" data-target=".method_getResultCode .collapse">
+<h2>Get Result Code
+Return the result code of the last operation</h2>
+<pre>getResultCode() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>code of the last Memcached operation</div>
+</div></div>
+</div>
+<a id="method_getResultMessage"></a><div class="element clickable method public method_getResultMessage" data-toggle="collapse" data-target=".method_getResultMessage .collapse">
+<h2>Get Result Message
+Return the message describing the result of the last operation</h2>
+<pre>getResultMessage() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>message describing the result of the last Memcached operation</div>
+</div></div>
+</div>
+<a id="method_replace"></a><div class="element clickable method public method_replace" data-toggle="collapse" data-target=".method_replace .collapse">
+<h2>Replace
+Replace the item under an existing key</h2>
+<pre>replace(string $key, mixed $value, int $expire) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key to replace</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Value to replace with</p></div>
+<div class="subelement argument">
+<h4>$expire</h4>
+<code>int</code><p>How long the item is valid for. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set" data-toggle="collapse" data-target=".method_set .collapse">
+<h2>Set
+Store an item</h2>
+<pre>set(string $key, mixed $value, int $expire) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Key to dtore item under</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Value of item</p></div>
+<div class="subelement argument">
+<h4>$expire</h4>
+<code>int</code><p>How long the item s valid for. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_setMulti"></a><div class="element clickable method public method_setMulti" data-toggle="collapse" data-target=".method_setMulti .collapse">
+<h2>Set Multi
+Store multiple items</h2>
+<pre>setMulti(array $items, int $expire) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$items</h4>
+<code>array</code><p>Key => value array of items to be stored</p>
+</div>
+<div class="subelement argument">
+<h4>$expire</h4>
+<code>int</code><p>How long items are valid for. (optional, default is 0)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_conf"> </a><div class="element clickable property private property_conf" data-toggle="collapse" data-target=".property_conf .collapse">
+<h2></h2>
+<pre>$conf : \Powerstack\Plugins\stdclass</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_memcached"> </a><div class="element clickable property private property_memcached" data-toggle="collapse" data-target=".property_memcached .collapse">
+<h2></h2>
+<pre>$memcached : <a href="../classes/Powerstack.Plugins.Memcached.html">\Powerstack\Plugins\Memcached</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-30T15:44:56+12:00.<br></footer></div>
+</div>
+</body>
+</html>

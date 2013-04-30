@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Powerstack » \Powerstack\Core\Filesystem</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Powerstack</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Powerstack.html"><i class="icon-th"></i> Powerstack</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Powerstack.html"><i class="icon-folder-open"></i> Powerstack</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">59</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_appendFile" title="appendFile :: Append File
+Append a file"><span class="description">Append File
+Append a file</span><pre>appendFile()</pre></a></li>
+<li class="method public "><a href="#method_copy" title="copy :: Copy
+Copy a file"><span class="description">Copy
+Copy a file</span><pre>copy()</pre></a></li>
+<li class="method public "><a href="#method_find" title="find :: Find
+Find a file or pattern"><span class="description">Find
+Find a file or pattern</span><pre>find()</pre></a></li>
+<li class="method public "><a href="#method_listAll" title="listAll :: List All
+List All files and directories"><span class="description">List All
+List All files and directories</span><pre>listAll()</pre></a></li>
+<li class="method public "><a href="#method_listDirs" title="listDirs :: List Dirs
+List Directories"><span class="description">List Dirs
+List Directories</span><pre>listDirs()</pre></a></li>
+<li class="method public "><a href="#method_listFiles" title="listFiles :: List Files
+List Files"><span class="description">List Files
+List Files</span><pre>listFiles()</pre></a></li>
+<li class="method public "><a href="#method_mkdir" title="mkdir :: Mkdir
+Make a directory"><span class="description">Mkdir
+Make a directory</span><pre>mkdir()</pre></a></li>
+<li class="method public "><a href="#method_move" title="move :: Move
+Move a file"><span class="description">Move
+Move a file</span><pre>move()</pre></a></li>
+<li class="method public "><a href="#method_readFile" title="readFile :: Read File
+Read a File"><span class="description">Read File
+Read a File</span><pre>readFile()</pre></a></li>
+<li class="method public "><a href="#method_remove" title="remove :: Remove
+Remove a file of directory"><span class="description">Remove
+Remove a file of directory</span><pre>remove()</pre></a></li>
+<li class="method public "><a href="#method_writeFile" title="writeFile :: Write File
+Write to a file"><span class="description">Write File
+Write to a file</span><pre>writeFile()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\Powerstack\Core\Filesystem"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Powerstack.html">Powerstack</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Powerstack.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Powerstack.Core.Filesystem.html">Filesystem</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_appendFile"></a><div class="element clickable method public method_appendFile" data-toggle="collapse" data-target=".method_appendFile .collapse">
+<h2>Append File
+Append a file</h2>
+<pre>appendFile(string $file, string $data) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>File to append to</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>Data to append</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, otherwise false</div>
+</div></div>
+</div>
+<a id="method_copy"></a><div class="element clickable method public method_copy" data-toggle="collapse" data-target=".method_copy .collapse">
+<h2>Copy
+Copy a file</h2>
+<pre>copy(string $orig, string $new) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$orig</h4>
+<code>string</code><p>File to copy</p></div>
+<div class="subelement argument">
+<h4>$new</h4>
+<code>string</code><p>Where to copy file to</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, otherwise false</div>
+</div></div>
+</div>
+<a id="method_find"></a><div class="element clickable method public method_find" data-toggle="collapse" data-target=".method_find .collapse">
+<h2>Find
+Find a file or pattern</h2>
+<pre>find(string $path, string $pattern) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="">\Powerstack\Core\http://php.net/glob</a></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>Path to search in</p></div>
+<div class="subelement argument">
+<h4>$pattern</h4>
+<code>string</code><p>Glob pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>for found items</div>
+</div></div>
+</div>
+<a id="method_listAll"></a><div class="element clickable method public method_listAll" data-toggle="collapse" data-target=".method_listAll .collapse">
+<h2>List All
+List All files and directories</h2>
+<pre>listAll(string $dir, bool $recursive) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>Directory to list all the things in</p></div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>Recursivly scan. (optional default is false)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>containing the files and directories found</div>
+</div></div>
+</div>
+<a id="method_listDirs"></a><div class="element clickable method public method_listDirs" data-toggle="collapse" data-target=".method_listDirs .collapse">
+<h2>List Dirs
+List Directories</h2>
+<pre>listDirs(\Powerstack\Core\sting | array $dir, bool $recursive, $dirs) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>\Powerstack\Core\sting</code><code>array</code><p>Directory to scan</p></div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>Recursivly scan. (optional default is false)</p>
+</div>
+<div class="subelement argument"><h4>$dirs</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>of found directories</div>
+</div></div>
+</div>
+<a id="method_listFiles"></a><div class="element clickable method public method_listFiles" data-toggle="collapse" data-target=".method_listFiles .collapse">
+<h2>List Files
+List Files</h2>
+<pre>listFiles(\Powerstack\Core\sting $dir, bool $recursive, array $files) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>\Powerstack\Core\sting</code><p>Directory to scan</p></div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>Recursivly scan. (optional default is false)</p>
+</div>
+<div class="subelement argument">
+<h4>$files</h4>
+<code>array</code><p>Array of found files. (optional default is empty array)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>of found files</div>
+</div></div>
+</div>
+<a id="method_mkdir"></a><div class="element clickable method public method_mkdir" data-toggle="collapse" data-target=".method_mkdir .collapse">
+<h2>Mkdir
+Make a directory</h2>
+<pre>mkdir(string $dir, int $chmod, bool $recursive) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="">\Powerstack\Core\http://php.net/mkdir</a></td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>string</code><p>Path to new dir</p></div>
+<div class="subelement argument">
+<h4>$chmod</h4>
+<code>int</code><p>Mode/chmod permissions for new file. (optional default is 0755)</p>
+</div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>MAke directories recursivly</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on sucess, otherwise false</div>
+</div></div>
+</div>
+<a id="method_move"></a><div class="element clickable method public method_move" data-toggle="collapse" data-target=".method_move .collapse">
+<h2>Move
+Move a file</h2>
+<pre>move(string $orig, string $new) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$orig</h4>
+<code>string</code><p>File to move</p></div>
+<div class="subelement argument">
+<h4>$new</h4>
+<code>string</code><p>New file path</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, otherwise false</div>
+</div></div>
+</div>
+<a id="method_readFile"></a><div class="element clickable method public method_readFile" data-toggle="collapse" data-target=".method_readFile .collapse">
+<h2>Read File
+Read a File</h2>
+<pre>readFile(string $file) : mixed</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>File to read</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>contents of file on success, otherwise false</div>
+</div></div>
+</div>
+<a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
+<h2>Remove
+Remove a file of directory</h2>
+<pre>remove(string $path, bool $dir, bool $recursive) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>Path to file/dir to remove</p>
+</div>
+<div class="subelement argument">
+<h4>$dir</h4>
+<code>bool</code><p>Removing directory. (optional default is false)</p>
+</div>
+<div class="subelement argument">
+<h4>$recursive</h4>
+<code>bool</code><p>Recursivly remove files and directories. (optional default is false)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, otherwise false</div>
+</div></div>
+</div>
+<a id="method_writeFile"></a><div class="element clickable method public method_writeFile" data-toggle="collapse" data-target=".method_writeFile .collapse">
+<h2>Write File
+Write to a file</h2>
+<pre>writeFile(string $file, string $data) : bool</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code><p>File to write to</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>Data to write to file</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true oin success, otherwise false</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-30T15:44:56+12:00.<br></footer></div>
+</div>
+</body>
+</html>
