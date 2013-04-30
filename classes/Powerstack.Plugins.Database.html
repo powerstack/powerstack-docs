@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Powerstack » \Powerstack\Plugins\Database</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Powerstack</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Powerstack.html"><i class="icon-th"></i> Powerstack</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Powerstack.html"><i class="icon-folder-open"></i> Powerstack</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">59</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: __construct
+Create a new Powerstack\Plugins\Database object"><span class="description">__construct
+Create a new Powerstack\Plugins\Database object</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_connect" title="connect :: Connect
+Connect to the database"><span class="description">Connect
+Connect to the database</span><pre>connect()</pre></a></li>
+<li class="method public "><a href="#method_databaseError" title="databaseError :: Database Error
+Get error info from database handle"><span class="description">Database Error
+Get error info from database handle</span><pre>databaseError()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Delete
+Delete a record from the database"><span class="description">Delete
+Delete a record from the database</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_executeSql" title="executeSql :: Execute Sql
+Execute a sql command"><span class="description">Execute Sql
+Execute a sql command</span><pre>executeSql()</pre></a></li>
+<li class="method public "><a href="#method_fetch" title="fetch :: Fetch
+Fetch a row from the resultset"><span class="description">Fetch
+Fetch a row from the resultset</span><pre>fetch()</pre></a></li>
+<li class="method public "><a href="#method_fetchAll" title="fetchAll :: FetchAll
+Fetch all rows from the resultset"><span class="description">FetchAll
+Fetch all rows from the resultset</span><pre>fetchAll()</pre></a></li>
+<li class="method public "><a href="#method_insert" title="insert :: Insert
+Insert a record into the database"><span class="description">Insert
+Insert a record into the database</span><pre>insert()</pre></a></li>
+<li class="method public "><a href="#method_isConnected" title="isConnected :: Is Connected
+Are you connected to the database"><span class="description">Is Connected
+Are you connected to the database</span><pre>isConnected()</pre></a></li>
+<li class="method public "><a href="#method_rowCount" title="rowCount :: Row Count
+Gets number of rows selected or row affected"><span class="description">Row Count
+Gets number of rows selected or row affected</span><pre>rowCount()</pre></a></li>
+<li class="method public "><a href="#method_select" title="select :: Select
+Run a select query on the database"><span class="description">Select
+Run a select query on the database</span><pre>select()</pre></a></li>
+<li class="method public "><a href="#method_statementError" title="statementError :: Statement Error
+Get error info about the last statement run"><span class="description">Statement Error
+Get error info about the last statement run</span><pre>statementError()</pre></a></li>
+<li class="method public "><a href="#method_update" title="update :: Update
+Update a record into the database"><span class="description">Update
+Update a record into the database</span><pre>update()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_buildDsn" title="buildDsn :: Build Dsn
+Builds the PDO Dsn string"><span class="description">Build Dsn
+Builds the PDO Dsn string</span><pre>buildDsn()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_conf" title="$conf :: "><span class="description"></span><pre>$conf</pre></a></li>
+<li class="property private "><a href="#property_connected" title="$connected :: "><span class="description"></span><pre>$connected</pre></a></li>
+<li class="property private "><a href="#property_db" title="$db :: "><span class="description"></span><pre>$db</pre></a></li>
+<li class="property private "><a href="#property_statement" title="$statement :: "><span class="description"></span><pre>$statement</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Powerstack\Plugins\Database"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Powerstack.html">Powerstack</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Powerstack.Plugins.html">Plugins</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Powerstack.Plugins.Database.html">Database</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct
+Create a new Powerstack\Plugins\Database object</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Configuration:
+  app/config.xml:
+      <plugins>
+          <database>
+              <driver>[pgsql | mysql | slqite]</driver>
+              <host>[Database Host]</host>
+              <name>[Database Name]</name>
+              <user>[Database Username]</user>
+              <pass>[Database Password]</pass>
+              <port>[Database Port]</port>
+          </database>
+      </plugins></p></div></div></div>
+</div>
+<a id="method_connect"></a><div class="element clickable method public method_connect" data-toggle="collapse" data-target=".method_connect .collapse">
+<h2>Connect
+Connect to the database</h2>
+<pre>connect() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Hook database_connected is called after a successful connection is made
+to the database. It passes the a reference to the new PDO object.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_databaseError"></a><div class="element clickable method public method_databaseError" data-toggle="collapse" data-target=".method_databaseError .collapse">
+<h2>Database Error
+Get error info from database handle</h2>
+<pre>databaseError() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>with error info</div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete
+Delete a record from the database</h2>
+<pre>delete(string $table, array $where) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table</h4>
+<code>string</code><p>Name of table to delete from</p></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code><p>Field => value array to be used as where statements</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_executeSql"></a><div class="element clickable method public method_executeSql" data-toggle="collapse" data-target=".method_executeSql .collapse">
+<h2>Execute Sql
+Execute a sql command</h2>
+<pre>executeSql(string $sql, array $params) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sql</h4>
+<code>string</code><p>Sql query to execute</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Array of replacements values for the query. (optional)</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
+<h2>Fetch
+Fetch a row from the resultset</h2>
+<pre>fetch(int $fetch) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>returns</th>
+<td>mixed row from resultset</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fetch</h4>
+<code>int</code><p>PDO Fetch style. (optional, default is PDO::FETCH_OBJ)</p>
+</div>
+</div></div>
+</div>
+<a id="method_fetchAll"></a><div class="element clickable method public method_fetchAll" data-toggle="collapse" data-target=".method_fetchAll .collapse">
+<h2>FetchAll
+Fetch all rows from the resultset</h2>
+<pre>fetchAll(int $fetch) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>returns</th>
+<td>array rows from resultset</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fetch</h4>
+<code>int</code><p>PDO Fetch style. (optional, default is PDO::FETCH_OBJ)</p>
+</div>
+</div></div>
+</div>
+<a id="method_insert"></a><div class="element clickable method public method_insert" data-toggle="collapse" data-target=".method_insert .collapse">
+<h2>Insert
+Insert a record into the database</h2>
+<pre>insert(string $table, array $record) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table</h4>
+<code>string</code><p>Name of table to insert into</p></div>
+<div class="subelement argument">
+<h4>$record</h4>
+<code>array</code><p>Field => value array for data to be inserted</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_isConnected"></a><div class="element clickable method public method_isConnected" data-toggle="collapse" data-target=".method_isConnected .collapse">
+<h2>Is Connected
+Are you connected to the database</h2>
+<pre>isConnected() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true if connected, false otherwise</div>
+</div></div>
+</div>
+<a id="method_rowCount"></a><div class="element clickable method public method_rowCount" data-toggle="collapse" data-target=".method_rowCount .collapse">
+<h2>Row Count
+Gets number of rows selected or row affected</h2>
+<pre>rowCount() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>number of rows selected or row affected</div>
+</div></div>
+</div>
+<a id="method_select"></a><div class="element clickable method public method_select" data-toggle="collapse" data-target=".method_select .collapse">
+<h2>Select
+Run a select query on the database</h2>
+<pre>select(string $table, array $where, array $like, array $order, int $limit, int $offset) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table</h4>
+<code>string</code><p>Name of table to query</p></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code><p>Field => value array to be used as where statements. (optional)</p>
+</div>
+<div class="subelement argument">
+<h4>$like</h4>
+<code>array</code><p>Field => value array to be used as like statements. (optional)</p>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>array</code><p>Field => order array to be used as order by statement. (optional)</p>
+</div>
+<div class="subelement argument">
+<h4>$limit</h4>
+<code>int</code><p>Limit number of records. (optional)</p>
+</div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>int</code><p>Offset the reccords. (optional)</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_statementError"></a><div class="element clickable method public method_statementError" data-toggle="collapse" data-target=".method_statementError .collapse">
+<h2>Statement Error
+Get error info about the last statement run</h2>
+<pre>statementError() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>with error info</div>
+</div></div>
+</div>
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<h2>Update
+Update a record into the database</h2>
+<pre>update(string $table, array $record, array $where) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table</h4>
+<code>string</code><p>Name of table to update</p></div>
+<div class="subelement argument">
+<h4>$record</h4>
+<code>array</code><p>Field => value array for data to be inserted</p>
+</div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code><p>Field => value array to be used as where statements</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code>\Powerstack\Plugins\PDOException</code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false otherwise</div>
+</div></div>
+</div>
+<a id="method_buildDsn"></a><div class="element clickable method private method_buildDsn" data-toggle="collapse" data-target=".method_buildDsn .collapse">
+<h2>Build Dsn
+Builds the PDO Dsn string</h2>
+<pre>buildDsn() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>PDO Dsn</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_conf"> </a><div class="element clickable property private property_conf" data-toggle="collapse" data-target=".property_conf .collapse">
+<h2></h2>
+<pre>$conf : \Powerstack\Plugins\stdclass</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_connected"> </a><div class="element clickable property private property_connected" data-toggle="collapse" data-target=".property_connected .collapse">
+<h2></h2>
+<pre>$connected : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_db"> </a><div class="element clickable property private property_db" data-toggle="collapse" data-target=".property_db .collapse">
+<h2></h2>
+<pre>$db : \Powerstack\Plugins\PDO</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_statement"> </a><div class="element clickable property private property_statement" data-toggle="collapse" data-target=".property_statement .collapse">
+<h2></h2>
+<pre>$statement : \Powerstack\Plugins\PDOStatment</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-30T15:44:56+12:00.<br></footer></div>
+</div>
+</body>
+</html>
