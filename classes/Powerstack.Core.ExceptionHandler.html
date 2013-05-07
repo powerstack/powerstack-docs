@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>Powerstack » \Powerstack\Plugins\Template\TemplateTwig</title>
+<title>Powerstack » \Powerstack\Core\ExceptionHandler</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -56,139 +56,69 @@
 <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
 <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
 </div>
-<ul class="side-nav nav nav-list">
-<li class="nav-header">
+<ul class="side-nav nav nav-list"><li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_init" title="init :: Init
-Initalize template engine"><span class="description">Init
-Initalize template engine</span><pre>init()</pre></a></li>
-<li class="method public "><a href="#method_render" title="render :: Render
-Render a template"><span class="description">Render
-Render a template</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_handler" title="handler :: Handler
+Handle errors"><span class="description">Handler
+Handle errors</span><pre>handler()</pre></a></li>
+<li class="method public "><a href="#method_log" title="log :: Log
+Log an error"><span class="description">Log
+Log an error</span><pre>log()</pre></a></li>
 </ul>
-</li>
-<li class="nav-header">
-<i class="icon-custom icon-property"></i> Properties
-                    <ul></ul>
-</li>
-<li class="nav-header private">» Private
-                    <ul>
-<li class="property private "><a href="#property_conf" title="$conf :: "><span class="description"></span><pre>$conf</pre></a></li>
-<li class="property private "><a href="#property_twig" title="$twig :: "><span class="description"></span><pre>$twig</pre></a></li>
-<li class="property private "><a href="#property_viewsdir" title="$viewsdir :: "><span class="description"></span><pre>$viewsdir</pre></a></li>
-</ul>
-</li>
-</ul>
+</li></ul>
 </div>
 <div class="span8">
-<a id="\Powerstack\Plugins\Template\TemplateTwig"></a><ul class="breadcrumb">
+<a id="\Powerstack\Core\ExceptionHandler"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/Powerstack.html">Powerstack</a></li>
 <li>
-<span class="divider">\</span><a href="../namespaces/Powerstack.Plugins.html">Plugins</a>
-</li>
-<li>
-<span class="divider">\</span><a href="../namespaces/Powerstack.Plugins.Template.html">Template</a>
+<span class="divider">\</span><a href="../namespaces/Powerstack.Core.html">Core</a>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/Powerstack.Plugins.Template.TemplateTwig.html">TemplateTwig</a>
+<span class="divider">\</span><a href="../classes/Powerstack.Core.ExceptionHandler.html">ExceptionHandler</a>
 </li>
 </ul>
 <div class="element class"><div class="details">
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_init"></a><div class="element clickable method public method_init" data-toggle="collapse" data-target=".method_init .collapse">
-<h2>Init
-Initalize template engine</h2>
-<pre>init() : void</pre>
+<a id="method_handler"></a><div class="element clickable method public method_handler" data-toggle="collapse" data-target=".method_handler .collapse">
+<h2>Handler
+Handle errors</h2>
+<pre>handler(\Powerstack\Core\exception $exception) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Configuration:
-  app/config.xml:
-      <template>
-          <engine>twig</engine>
-          [<cachedir>[path to cache dir]</cachedir>]
-          ...
-      </template></p></div>
-<table class="table table-bordered"><tr>
-<th>access</th>
-<td>public</td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
-<h2>Render
-Render a template</h2>
-<pre>render(string $tpl, array $params, string $layout) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Hook before_template_render, function takes the $params as an argument for
-changing values on the fly, function must return the $params array.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>access</th>
 <td>public</td>
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$tpl</h4>
-<code>string</code><p>Template file to render</p></div>
-<div class="subelement argument">
-<h4>$params</h4>
-<code>array</code><p>Key => value array of template replacements. (optional, default is empty array)</p>
-</div>
-<div class="subelement argument">
-<h4>$layout</h4>
-<code>string</code><p>Name of layout to use. (optional, default is default)</p>
-</div>
-<h3>Exceptions</h3>
-<table class="table table-bordered"><tr>
-<th><code>\Powerstack\Plugins\Template\TwigException</code></th>
-<td></td>
-</tr></table>
+<h4>$exception</h4>
+<code>\Powerstack\Core\exception</code><p>Exception object</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>string</code>rendered template</div>
+<code>mixed</code>void if not needed or true</div>
 </div></div>
 </div>
-<h3>
-<i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property_conf"> </a><div class="element clickable property private property_conf" data-toggle="collapse" data-target=".property_conf .collapse">
-<h2></h2>
-<pre>$conf : \Powerstack\Plugins\Template\stdclass</pre>
+<a id="method_log"></a><div class="element clickable method public method_log" data-toggle="collapse" data-target=".method_log .collapse">
+<h2>Log
+Log an error</h2>
+<pre>log(string $message) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>access</th>
-<td>private</td>
+<td>public</td>
 </tr></table>
-</div></div>
-</div>
-<a id="property_twig"> </a><div class="element clickable property private property_twig" data-toggle="collapse" data-target=".property_twig .collapse">
-<h2></h2>
-<pre>$twig : \Powerstack\Plugins\Template\TwigEnvironment</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>access</th>
-<td>private</td>
-</tr></table>
-</div></div>
-</div>
-<a id="property_viewsdir"> </a><div class="element clickable property private property_viewsdir" data-toggle="collapse" data-target=".property_viewsdir .collapse">
-<h2></h2>
-<pre>$viewsdir : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>access</th>
-<td>private</td>
-</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Error to log</p></div>
 </div></div>
 </div>
 </div></div>

@@ -338,7 +338,7 @@ Hash a password</description>
       <error line="0" code="50007">No page-level DocBlock was found in file app/includes/auth.php</error>
     </parse_markers>
   </file>
-  <file path="app/app.php" hash="bb16535103192a88530924e82c0dc4c6" package="Default">
+  <file path="app/app.php" hash="abe93de25aa77a8ea8ee4a39abf4a6c4" package="Default">
     <parse_markers>
       <error line="0" code="50007">No page-level DocBlock was found in file app/app.php</error>
     </parse_markers>
@@ -1762,6 +1762,66 @@ Initalize the object and load anything for $_GET &amp; $_POST into the class var
       <error line="30" code="50000">No DocBlock was found for \Powerstack\Core\Params</error>
     </parse_markers>
   </file>
+  <file path="lib/powerstack/core/exceptionhandler.php" hash="e22bc6a6aaddd5cb9f518e3c6f84d20a" package="Powerstack\Core">
+    <docblock line="19">
+      <description>Exception Handler
+Exception Handler class for Powerstack</description>
+      <long-description></long-description>
+      <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
+      <tag line="19" name="package" description="Powerstack"/>
+      <tag line="19" name="subpackage" description="Core"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Powerstack\Core" line="29" package="Default">
+      <extends/>
+      <name>ExceptionHandler</name>
+      <full_name>\Powerstack\Core\ExceptionHandler</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="38" package="Default">
+        <name>handler</name>
+        <full_name>handler</full_name>
+        <docblock line="30">
+          <description>Handler
+Handle errors</description>
+          <long-description></long-description>
+          <tag line="30" name="access" description="public"/>
+          <tag line="30" name="param" description="Exception object" type="\Powerstack\Core\exception" variable="$exception">
+            <type by_reference="false">\Powerstack\Core\exception</type>
+          </tag>
+          <tag line="30" name="return" description="void if not needed or true" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="38">
+          <name>$exception</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="66" package="Default">
+        <name>log</name>
+        <full_name>log</full_name>
+        <docblock line="58">
+          <description>Log
+Log an error</description>
+          <long-description></long-description>
+          <tag line="58" name="access" description="public"/>
+          <tag line="58" name="param" description="Error to log" type="string" variable="$message">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="58" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="66">
+          <name>$message</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="29" code="50000">No DocBlock was found for \Powerstack\Core\ExceptionHandler</error>
+    </parse_markers>
+  </file>
   <file path="lib/powerstack/core/templatesimple.php" hash="e159d71bc491e8800879797beaefe782" package="Powerstack\Core">
     <docblock line="19">
       <description>Template Simple
@@ -2176,6 +2236,90 @@ Get the requet uri either for $_SERVER['REQUEST_URI'] or $_GET['q']</description
     </class>
     <parse_markers>
       <error line="29" code="50000">No DocBlock was found for \Powerstack\Core\Request</error>
+    </parse_markers>
+  </file>
+  <file path="lib/powerstack/core/errorhandler.php" hash="78427f64b0ec4f3b53f49990a9de8571" package="Powerstack\Core">
+    <docblock line="19">
+      <description>Error Handler
+Error Handler class for Powerstack</description>
+      <long-description></long-description>
+      <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
+      <tag line="19" name="package" description="Powerstack"/>
+      <tag line="19" name="subpackage" description="Core"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Powerstack\Core" line="29" package="Default">
+      <extends/>
+      <name>ErrorHandler</name>
+      <full_name>\Powerstack\Core\ErrorHandler</full_name>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="41" package="Default">
+        <name>handler</name>
+        <full_name>handler</full_name>
+        <docblock line="30">
+          <description>Handler
+Handle errors</description>
+          <long-description></long-description>
+          <tag line="30" name="access" description="public"/>
+          <tag line="30" name="param" description="Error Number" type="int" variable="$errno">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="30" name="param" description="Error message" type="string" variable="$errstr">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="30" name="param" description="File where error happened" type="string" variable="$errfile">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="30" name="param" description="Line in file where error happened" type="int" variable="$errline">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="30" name="return" description="void if not needed or true" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="41">
+          <name>$errno</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="41">
+          <name>$errstr</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="41">
+          <name>$errfile</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="41">
+          <name>$errline</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="93" package="Default">
+        <name>log</name>
+        <full_name>log</full_name>
+        <docblock line="85">
+          <description>Log
+Log an error</description>
+          <long-description></long-description>
+          <tag line="85" name="access" description="public"/>
+          <tag line="85" name="param" description="Error to log" type="string" variable="$message">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="85" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="93">
+          <name>$message</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="29" code="50000">No DocBlock was found for \Powerstack\Core\ErrorHandler</error>
     </parse_markers>
   </file>
   <file path="lib/powerstack/core/sessionfactory.php" hash="aecf8047b7c7e977d7b6e01032ef8067" package="Powerstack\Core">
@@ -3754,16 +3898,16 @@ Run all cron hooks</description>
       <error line="32" code="50000">No DocBlock was found for \Powerstack\Plugins\Cron</error>
     </parse_markers>
   </file>
-  <file path="lib/powerstack/plugins/model.php" hash="7977bf99e18e3670d582e01e0bcdc1eb" package="Powerstack\Plugins">
+  <file path="lib/powerstack/plugins/model.php" hash="39e45aff56c3512222c2f3a477121128" package="Powerstack\Plugins">
     <docblock line="19">
       <description>Model
 Model class for Powerstack</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
     </docblock>
-    <include line="71" type="Require Once" package="Default">
+    <include line="78" type="Require Once" package="Default">
       <name/>
     </include>
     <class final="false" abstract="false" namespace="Powerstack\Plugins" line="30" package="Default">
@@ -3774,8 +3918,8 @@ Model class for Powerstack</description>
         <name>$query</name>
         <default>null</default>
         <docblock line="31">
-          <description/>
-          <long-description/>
+          <description></description>
+          <long-description></long-description>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -3784,186 +3928,191 @@ Model class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="41" namespace="Powerstack\Plugins" package="Default">
         <name>$db</name>
-        <default/>
+        <default></default>
         <docblock line="37">
-          <description/>
-          <long-description/>
+          <description></description>
+          <long-description></long-description>
           <tag line="37" name="access" description="private"/>
           <tag line="37" name="var" description="" type="\Powerstack\Plugins\Powerstack\Plugin\Database">
             <type by_reference="false">\Powerstack\Plugins\Powerstack\Plugin\Database</type>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="49" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="56" package="Default">
         <name>__construct</name>
         <full_name>__construct</full_name>
         <docblock line="43">
           <description>__construct()
 Create a new instance of Powerstack\Plugins\Model</description>
-          <long-description/>
+          <long-description>&lt;p&gt;Configuration:
+  app/config.xml:
+      &lt;settings&gt;
+          &lt;modelsdir&gt;app/models&lt;/modelsdir&gt;
+          ...
+      &lt;/settings&gt;&lt;/p&gt;</long-description>
           <tag line="43" name="throws" description="" type="\Powerstack\Plugins\Powerstack\Core\Exception">
             <type by_reference="false">\Powerstack\Plugins\Powerstack\Core\Exception</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="84" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="91" package="Default">
         <name>findOne</name>
         <full_name>findOne</full_name>
-        <docblock line="76">
+        <docblock line="83">
           <description>Find One
 Find one record</description>
-          <long-description/>
-          <tag line="76" name="access" description="public"/>
-          <tag line="76" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
+          <long-description></long-description>
+          <tag line="83" name="access" description="public"/>
+          <tag line="83" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="76" name="return" description="object of row otherwise false." type="mixed">
+          <tag line="83" name="return" description="object of row otherwise false." type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="84">
+        <argument line="91">
           <name>$where</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="108" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="115" package="Default">
         <name>findMany</name>
         <full_name>findMany</full_name>
-        <docblock line="97">
+        <docblock line="104">
           <description>Find Many
 Find many records</description>
-          <long-description/>
-          <tag line="97" name="access" description="public"/>
-          <tag line="97" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
+          <long-description></long-description>
+          <tag line="104" name="access" description="public"/>
+          <tag line="104" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="97" name="param" description="Array of order by info. eg array('id' =&gt; 'desc')" type="array" variable="$order">
+          <tag line="104" name="param" description="Array of order by info. eg array('id' =&gt; 'desc')" type="array" variable="$order">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="97" name="param" description="Limit records" type="int" variable="$limit">
+          <tag line="104" name="param" description="Limit records" type="int" variable="$limit">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="97" name="param" description="Offset records" type="int" variable="$offset">
+          <tag line="104" name="param" description="Offset records" type="int" variable="$offset">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="97" name="return" description="object of row otherwise false." type="mixed">
+          <tag line="104" name="return" description="object of row otherwise false." type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="108">
+        <argument line="115">
           <name>$where</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="108">
+        <argument line="115">
           <name>$order</name>
           <default>array()</default>
           <type/>
         </argument>
-        <argument line="108">
+        <argument line="115">
           <name>$limit</name>
           <default>null</default>
           <type/>
         </argument>
-        <argument line="108">
+        <argument line="115">
           <name>$offset</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="143" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Plugins" line="150" package="Default">
         <name>all</name>
         <full_name>all</full_name>
-        <docblock line="136">
+        <docblock line="143">
           <description>All
 Get all records</description>
-          <long-description/>
-          <tag line="136" name="access" description="public"/>
-          <tag line="136" name="return" description="array of all records otherwise false" type="mixed">
+          <long-description></long-description>
+          <tag line="143" name="access" description="public"/>
+          <tag line="143" name="return" description="array of all records otherwise false" type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="161" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="168" package="Default">
         <name>processWhere</name>
         <full_name>processWhere</full_name>
-        <docblock line="153">
+        <docblock line="160">
           <description>Process Where
 Process array with where info.</description>
-          <long-description/>
-          <tag line="153" name="access" description="private"/>
-          <tag line="153" name="param" description="Array of where clause info." type="array" variable="$where">
+          <long-description></long-description>
+          <tag line="160" name="access" description="private"/>
+          <tag line="160" name="param" description="Array of where clause info." type="array" variable="$where">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="153" name="return" description="with sql string and params array." type="array">
+          <tag line="160" name="return" description="with sql string and params array." type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="161">
+        <argument line="168">
           <name>$where</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="231" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="247" package="Default">
         <name>processOrder</name>
         <full_name>processOrder</full_name>
-        <docblock line="223">
+        <docblock line="239">
           <description>Process Order
 Process order array</description>
-          <long-description/>
-          <tag line="223" name="access" description="private"/>
-          <tag line="223" name="param" description="Array of order by info" type="array" variable="$order">
+          <long-description></long-description>
+          <tag line="239" name="access" description="private"/>
+          <tag line="239" name="param" description="Array of order by info" type="array" variable="$order">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="223" name="return" description="order sql string" type="string">
+          <tag line="239" name="return" description="order sql string" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="231">
+        <argument line="247">
           <name>$order</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="249" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="265" package="Default">
         <name>processLimit</name>
         <full_name>processLimit</full_name>
-        <docblock line="242">
+        <docblock line="258">
           <description>Process Limit</description>
-          <long-description/>
-          <tag line="242" name="access" description="private"/>
-          <tag line="242" name="param" description="Limit records" type="int" variable="$limit">
+          <long-description></long-description>
+          <tag line="258" name="access" description="private"/>
+          <tag line="258" name="param" description="Limit records" type="int" variable="$limit">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="242" name="return" description="limit sql string" type="string">
+          <tag line="258" name="return" description="limit sql string" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="249">
+        <argument line="265">
           <name>$limit</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="260" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Plugins" line="276" package="Default">
         <name>processOffset</name>
         <full_name>processOffset</full_name>
-        <docblock line="253">
+        <docblock line="269">
           <description>Process Offset</description>
-          <long-description/>
-          <tag line="253" name="access" description="private"/>
-          <tag line="253" name="param" description="Offset records" type="int" variable="$limit">
+          <long-description></long-description>
+          <tag line="269" name="access" description="private"/>
+          <tag line="269" name="param" description="Offset records" type="int" variable="$limit">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="253" name="return" description="offset sql string" type="string">
+          <tag line="269" name="return" description="offset sql string" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="260">
+        <argument line="276">
           <name>$offset</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -3972,18 +4121,18 @@ Process order array</description>
       <error line="30" code="50000">No DocBlock was found for \Powerstack\Plugins\Model</error>
       <critical line="31" code="50019">No short description for property $query</critical>
       <critical line="37" code="50019">No short description for property $db</critical>
-      <error line="253" code="50014">Name of argument $offset does not match with the DocBlock's name $limit in processOffset()</error>
-      <notice line="253" code="50013">Parameter $limit could not be found in processOffset()</notice>
+      <error line="269" code="50014">Name of argument $offset does not match with the DocBlock's name $limit in processOffset()</error>
+      <notice line="269" code="50013">Parameter $limit could not be found in processOffset()</notice>
     </parse_markers>
   </file>
-  <file path="index.php" hash="51707ce684cb08a25ce6e6d578b75d2a" package="Default">
+  <file path="index.php" hash="ee467fcd6501cf3ba15b35b65bb0c02f" package="Default">
     <include line="22" type="Require Once" package="Default">
       <name/>
     </include>
     <include line="23" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="45" type="Require Once" package="Default">
+    <include line="53" type="Require Once" package="Default">
       <name/>
     </include>
     <constant namespace="global" line="19" package="Default">
@@ -4000,8 +4149,8 @@ Process order array</description>
       <error line="0" code="50007">No page-level DocBlock was found in file index.php</error>
     </parse_markers>
   </file>
-  <file path="autoloader.php" hash="696113c09a5c833c6e535cac04abecff" package="Default">
-    <include line="35" type="Require Once" package="Default">
+  <file path="autoloader.php" hash="17e275d12f253e42cc65adfe61652dda" package="Default">
+    <include line="36" type="Require Once" package="Default">
       <name/>
     </include>
     <parse_markers>
