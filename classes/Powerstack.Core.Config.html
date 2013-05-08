@@ -73,9 +73,9 @@ Set a class variable</span><pre>__set()</pre></a></li>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="method protected "><a href="#method_get_misc_settings" title="get_misc_settings :: Get Misc Settings
-Get the misc settings form the config file"><span class="description">Get Misc Settings
-Get the misc settings form the config file</span><pre>get_misc_settings()</pre></a></li>
+<li class="method protected "><a href="#method_arrayToObj" title="arrayToObj :: Array To Obj
+Convert an array to a object"><span class="description">Array To Obj
+Convert an array to a object</span><pre>arrayToObj()</pre></a></li>
 <li class="method protected "><a href="#method_load_config" title="load_config :: Load Config
 Load the config file into class variables"><span class="description">Load Config
 Load the config file into class variables</span><pre>load_config()</pre></a></li>
@@ -120,7 +120,7 @@ Create a new Powerstack\Core\Config object</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$conf_file</h4>
-<code>string</code><p>Path to config xml file</p></div>
+<code>string</code><p>Path to config yaml file</p></div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/Powerstack.Core.Exception.html">\Powerstack\Core\Exception</a></code></th>
@@ -160,10 +160,10 @@ Set a class variable</h2>
 <code>mixed</code><p>Value to set class var to</p></div>
 </div></div>
 </div>
-<a id="method_get_misc_settings"></a><div class="element clickable method protected method_get_misc_settings" data-toggle="collapse" data-target=".method_get_misc_settings .collapse">
-<h2>Get Misc Settings
-Get the misc settings form the config file</h2>
-<pre>get_misc_settings(\Powerstack\Core\SimpleXML $xml, mixed $settings, mixed $parentname) : \Powerstack\Core\stdclass</pre>
+<a id="method_arrayToObj"></a><div class="element clickable method protected method_arrayToObj" data-toggle="collapse" data-target=".method_arrayToObj .collapse">
+<h2>Array To Obj
+Convert an array to a object</h2>
+<pre>arrayToObj(array $array) : object</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -173,19 +173,10 @@ Get the misc settings form the config file</h2>
 </tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$xml</h4>
-<code>\Powerstack\Core\SimpleXML</code><p>Object   $xml    The settings SimpleXML object</p>
-</div>
-<div class="subelement argument">
-<h4>$settings</h4>
-<code>mixed</code><p>The current value of the settings object. (optional)</p>
-</div>
-<div class="subelement argument">
-<h4>$parentname</h4>
-<code>mixed</code><p>The name of the parent object</p></div>
+<h4>$array</h4>
+<code>array</code><p>Array to convert to object</p></div>
 <h3>Returns</h3>
-<div class="subelement response">
-<code>\Powerstack\Core\stdclass</code>settings</div>
+<div class="subelement response"><code>object</code></div>
 </div></div>
 </div>
 <a id="method_load_config"></a><div class="element clickable method protected method_load_config" data-toggle="collapse" data-target=".method_load_config .collapse">
@@ -202,7 +193,7 @@ Load the config file into class variables</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$conf_file</h4>
-<code>string</code><p>Path to config xml file</p></div>
+<code>string</code><p>Path to config file</p></div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="../classes/Powerstack.Core.Exception.html">\Powerstack\Core\Exception</a></code></th>
@@ -230,7 +221,7 @@ Load the config file into class variables</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-08T09:31:19+12:00.<br></footer></div>
+            generated on 2013-05-08T16:00:15+12:00.<br></footer></div>
 </div>
 </body>
 </html>
