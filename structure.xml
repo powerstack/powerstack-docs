@@ -4,7 +4,7 @@
     <docblock line="19">
       <description>Application
 Application class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="App"/>
@@ -15,7 +15,7 @@ Application class for Powerstack</description>
       <docblock line="29">
         <description>Config
 Gets a config information from the global $config variable</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="29" name="see" description="\Powerstack\Core\Config" refers="\Powerstack\Core\Config"/>
         <tag line="29" name="param" description="Name of config variable to get or set." type="string" variable="$name">
           <type by_reference="false">string</type>
@@ -29,7 +29,7 @@ Gets a config information from the global $config variable</description>
       </docblock>
       <argument line="38">
         <name>$name</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="38">
@@ -44,7 +44,7 @@ Gets a config information from the global $config variable</description>
       <docblock line="49">
         <description>Template
 Render and display a template</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="49" name="see" description="\Powerstack\Core\TemplateFactory" refers="\Powerstack\Core\TemplateFactory"/>
         <tag line="49" name="param" description="Template to render" type="string" variable="$tpl">
           <type by_reference="false">string</type>
@@ -61,7 +61,7 @@ Render and display a template</description>
       </docblock>
       <argument line="59">
         <name>$tpl</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="59">
@@ -81,7 +81,7 @@ Render and display a template</description>
       <docblock line="65">
         <description>Session
 Get or set a session</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="65" name="see" description="\Powerstack\Core\SessionFactory" refers="\Powerstack\Core\SessionFactory"/>
         <tag line="65" name="param" description="Name of session to get or set." type="string" variable="$name">
           <type by_reference="false">string</type>
@@ -95,7 +95,7 @@ Get or set a session</description>
       </docblock>
       <argument line="74">
         <name>$name</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="74">
@@ -110,7 +110,7 @@ Get or set a session</description>
       <docblock line="84">
         <description>Cookie
 Get or set a cookie</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="84" name="see" description="\Powerstack\Core\Cookie" refers="\Powerstack\Core\Cookie"/>
         <tag line="84" name="param" description="Name of cookie to get or set." type="string" variable="$name">
           <type by_reference="false">string</type>
@@ -139,7 +139,7 @@ Get or set a cookie</description>
       </docblock>
       <argument line="98">
         <name>$name</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="98">
@@ -179,7 +179,7 @@ Get or set a cookie</description>
       <docblock line="108">
         <description>Hook
 Register a hook.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="108" name="see" description="\Powerstack\Core\Hooks" refers="\Powerstack\Core\Hooks"/>
         <tag line="108" name="param" description="Name of hook your registering" type="string" variable="$name">
           <type by_reference="false">string</type>
@@ -193,12 +193,12 @@ Register a hook.</description>
       </docblock>
       <argument line="117">
         <name>$name</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="117">
         <name>$function</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
     </function>
@@ -208,7 +208,7 @@ Register a hook.</description>
       <docblock line="122">
         <description>Registry
 Get or set item in the registry</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="122" name="see" description="\Powerstack\Core\Registry" refers="\Powerstack\Core\Registry"/>
         <tag line="122" name="param" description="Name of item to get or set" type="string" variable="$name">
           <type by_reference="false">string</type>
@@ -222,7 +222,7 @@ Get or set item in the registry</description>
       </docblock>
       <argument line="131">
         <name>$name</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="131">
@@ -237,14 +237,14 @@ Get or set item in the registry</description>
       <docblock line="141">
         <description>Redirect
 Redirect user to another page.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="141" name="param" description="Url to rediret to." type="string" variable="$url">
           <type by_reference="false">string</type>
         </tag>
       </docblock>
       <argument line="147">
         <name>$url</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
     </function>
@@ -256,7 +256,7 @@ Redirect user to another page.</description>
       <docblock line="5">
         <description>Auth
 Authenicate a user</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="5" name="see" description="\Powerstack\Plugins\Authenication::auth()" refers="\Powerstack\Plugins\Authenication::auth()"/>
         <tag line="5" name="param" description="Username from form" type="string" variable="$username">
           <type by_reference="false">string</type>
@@ -270,12 +270,12 @@ Authenicate a user</description>
       </docblock>
       <argument line="14">
         <name>$username</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
       <argument line="14">
         <name>$password</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
     </function>
@@ -285,7 +285,7 @@ Authenicate a user</description>
       <docblock line="25">
         <description>Authd
 Check if user is authenicated</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="25" name="see" description="\Powerstack\Plugins\Authenicated::authd()" refers="\Powerstack\Plugins\Authenicated::authd()"/>
         <tag line="25" name="return" description="if authenicated, false otherwise" type="true">
           <type by_reference="false">true</type>
@@ -298,7 +298,7 @@ Check if user is authenicated</description>
       <docblock line="43">
         <description>hasRole
 Check if user has a role assigned</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="43" name="see" description="\Powerstack\Plugins\Authenicated::hasRole()" refers="\Powerstack\Plugins\Authenicated::hasRole()"/>
         <tag line="43" name="param" description="Role to check" type="string" variable="$role">
           <type by_reference="false">string</type>
@@ -309,7 +309,7 @@ Check if user has a role assigned</description>
       </docblock>
       <argument line="51">
         <name>$role</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
     </function>
@@ -319,7 +319,7 @@ Check if user has a role assigned</description>
       <docblock line="62">
         <description>Hash Password
 Hash a password</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="62" name="see" description="\Powerstack\Plugins\Authenicated::hashPassword()" refers="\Powerstack\Plugins\Authenicated::hashPassword()"/>
         <tag line="62" name="param" description="Password to hash" type="string" variable="$password">
           <type by_reference="false">string</type>
@@ -330,7 +330,7 @@ Hash a password</description>
       </docblock>
       <argument line="70">
         <name>$password</name>
-        <default></default>
+        <default/>
         <type/>
       </argument>
     </function>
@@ -347,7 +347,7 @@ Hash a password</description>
     <docblock line="19">
       <description>Application
 Application class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -358,10 +358,10 @@ Application class for Powerstack</description>
       <full_name>\Powerstack\Core\Application</full_name>
       <property final="false" static="false" visibility="public" line="36" namespace="Powerstack\Core" package="Default">
         <name>$config</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Powerstack\Core\Config object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="acess" description="public"/>
           <tag line="30" name="var" description="" type="\Powerstack\Core\Powerstack\Core\Config">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Config</type>
@@ -370,10 +370,10 @@ Application class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="44" namespace="Powerstack\Core" package="Default">
         <name>$request</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Powerstack\Core\Request object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="public"/>
           <tag line="38" name="var" description="" type="\Powerstack\Core\Powerstack\Core\Request">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Request</type>
@@ -382,10 +382,10 @@ Application class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="52" namespace="Powerstack\Core" package="Default">
         <name>$params</name>
-        <default></default>
+        <default/>
         <docblock line="46">
           <description>Powerstack\Core\Params object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="access" description="public"/>
           <tag line="46" name="var" description="" type="\Powerstack\Core\Powerstack\Core\Params">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Params</type>
@@ -397,7 +397,7 @@ Application class for Powerstack</description>
         <default>array('get' =&gt; array(), 'post' =&gt; array(), 'put' =&gt; array(), 'delete' =&gt; array())</default>
         <docblock line="54">
           <description>Array that holds all the route info</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="access" description="private"/>
           <tag line="54" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -410,7 +410,7 @@ Application class for Powerstack</description>
         <docblock line="67">
           <description>__construct
 Create a new instance of Powerstack\Core\Application</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="67" name="access" description="public"/>
           <tag line="67" name="param" description="Powerstack config object" type="\Powerstack\Core\Powerstack\Core\Config" variable="$config">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Config</type>
@@ -418,7 +418,7 @@ Create a new instance of Powerstack\Core\Application</description>
         </docblock>
         <argument line="74">
           <name>$config</name>
-          <default></default>
+          <default/>
           <type>\Powerstack\Core\Config</type>
         </argument>
       </method>
@@ -428,7 +428,7 @@ Create a new instance of Powerstack\Core\Application</description>
         <docblock line="80">
           <description>Any
 Create a route handler that handles more than one HTTP request type</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="80" name="access" description="public"/>
           <tag line="80" name="param" description="An array of HTTP request methods. (Methods are get, post, put, delete)" type="array" variable="$methods">
             <type by_reference="false">array</type>
@@ -448,17 +448,17 @@ Create a route handler that handles more than one HTTP request type</description
         </docblock>
         <argument line="91">
           <name>$methods</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="91">
           <name>$uri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="91">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -468,7 +468,7 @@ Create a route handler that handles more than one HTTP request type</description
         <docblock line="115">
           <description>Get
 Create a route handler for HTTP GET request</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="115" name="access" description="public"/>
           <tag line="115" name="param" description="The route. ('/' for index page)" type="string" variable="$uri">
             <type by_reference="false">string</type>
@@ -485,12 +485,12 @@ Create a route handler for HTTP GET request</description>
         </docblock>
         <argument line="125">
           <name>$uri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="125">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -500,7 +500,7 @@ Create a route handler for HTTP GET request</description>
         <docblock line="137">
           <description>Post
 Create a route handler for HTTP POST request</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="137" name="access" description="public"/>
           <tag line="137" name="param" description="The route. ('/' for index page)" type="string" variable="$uri">
             <type by_reference="false">string</type>
@@ -517,12 +517,12 @@ Create a route handler for HTTP POST request</description>
         </docblock>
         <argument line="147">
           <name>$uri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="147">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -532,7 +532,7 @@ Create a route handler for HTTP POST request</description>
         <docblock line="159">
           <description>Put
 Create a route handler for HTTP PUT request</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="159" name="access" description="public"/>
           <tag line="159" name="param" description="The route. ('/' for index page)" type="string" variable="$uri">
             <type by_reference="false">string</type>
@@ -549,12 +549,12 @@ Create a route handler for HTTP PUT request</description>
         </docblock>
         <argument line="169">
           <name>$uri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="169">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -564,7 +564,7 @@ Create a route handler for HTTP PUT request</description>
         <docblock line="181">
           <description>Delete
 Create a route handler for HTTP Delete request</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="181" name="access" description="public"/>
           <tag line="181" name="param" description="The route. ('/' for index page)" type="string" variable="$uri">
             <type by_reference="false">string</type>
@@ -581,12 +581,12 @@ Create a route handler for HTTP Delete request</description>
         </docblock>
         <argument line="191">
           <name>$uri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="191">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -596,7 +596,7 @@ Create a route handler for HTTP Delete request</description>
         <docblock line="203">
           <description>Run
 This is the main function that runs the routes.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="203" name="access" description="public"/>
           <tag line="203" name="throws" description="" type="\Powerstack\Core\Exception">
             <type by_reference="false">\Powerstack\Core\Exception</type>
@@ -612,11 +612,11 @@ This is the main function that runs the routes.</description>
       <error line="67" code="50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $config in __construct()</error>
     </parse_markers>
   </file>
-  <file path="lib/powerstack/core/filesystem.php" hash="517db2b1842e935eaa3af0f950753189" package="Powerstack\Core">
+  <file path="lib/powerstack/core/filesystem.php" hash="e9b0b3e9411e33e6f8b601b31691fa24" package="Powerstack\Core">
     <docblock line="19">
       <description>Filesystem
 Filesystem class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -631,7 +631,7 @@ Filesystem class for Powerstack</description>
         <docblock line="31">
           <description>Move
 Move a file</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="31" name="access" description="public"/>
           <tag line="31" name="param" description="File to move" type="string" variable="$orig">
             <type by_reference="false">string</type>
@@ -645,12 +645,12 @@ Move a file</description>
         </docblock>
         <argument line="40">
           <name>$orig</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="40">
           <name>$new</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -660,7 +660,7 @@ Move a file</description>
         <docblock line="48">
           <description>Copy
 Copy a file</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="48" name="access" description="public"/>
           <tag line="48" name="param" description="File to copy" type="string" variable="$orig">
             <type by_reference="false">string</type>
@@ -674,12 +674,12 @@ Copy a file</description>
         </docblock>
         <argument line="57">
           <name>$orig</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="57">
           <name>$new</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -689,7 +689,7 @@ Copy a file</description>
         <docblock line="61">
           <description>Remove
 Remove a file of directory</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="61" name="access" description="public"/>
           <tag line="61" name="param" description="Path to file/dir to remove" type="string" variable="$path">
             <type by_reference="false">string</type>
@@ -706,7 +706,7 @@ Remove a file of directory</description>
         </docblock>
         <argument line="71">
           <name>$path</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="71">
@@ -726,7 +726,7 @@ Remove a file of directory</description>
         <docblock line="97">
           <description>Read File
 Read a File</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="97" name="access" description="public"/>
           <tag line="97" name="param" description="File to read" type="string" variable="$file">
             <type by_reference="false">string</type>
@@ -737,7 +737,7 @@ Read a File</description>
         </docblock>
         <argument line="105">
           <name>$file</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -747,7 +747,7 @@ Read a File</description>
         <docblock line="134">
           <description>Write File
 Write to a file</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="134" name="access" description="public"/>
           <tag line="134" name="param" description="File to write to" type="string" variable="$file">
             <type by_reference="false">string</type>
@@ -755,18 +755,18 @@ Write to a file</description>
           <tag line="134" name="param" description="Data to write to file" type="string" variable="$data">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="134" name="return" description="true oin success, otherwise false" type="bool">
+          <tag line="134" name="return" description="true on success, otherwise false" type="bool">
             <type by_reference="false">bool</type>
           </tag>
         </docblock>
         <argument line="143">
           <name>$file</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="143">
           <name>$data</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -776,7 +776,7 @@ Write to a file</description>
         <docblock line="166">
           <description>Append File
 Append a file</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="166" name="access" description="public"/>
           <tag line="166" name="param" description="File to append to" type="string" variable="$file">
             <type by_reference="false">string</type>
@@ -790,12 +790,12 @@ Append a file</description>
         </docblock>
         <argument line="175">
           <name>$file</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="175">
           <name>$data</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -805,7 +805,7 @@ Append a file</description>
         <docblock line="198">
           <description>List All
 List All files and directories</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="198" name="access" description="public"/>
           <tag line="198" name="param" description="Directory to list all the things in" type="string" variable="$dir">
             <type by_reference="false">string</type>
@@ -819,7 +819,7 @@ List All files and directories</description>
         </docblock>
         <argument line="207">
           <name>$dir</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="207">
@@ -834,7 +834,7 @@ List All files and directories</description>
         <docblock line="216">
           <description>List Dirs
 List Directories</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="216" name="access" description="public"/>
           <tag line="216" name="param" description="Directory to scan" type="\Powerstack\Core\sting" variable="$dir">
             <type by_reference="false">\Powerstack\Core\sting</type>
@@ -851,7 +851,7 @@ List Directories</description>
         </docblock>
         <argument line="226">
           <name>$dir</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="226">
@@ -871,7 +871,7 @@ List Directories</description>
         <docblock line="243">
           <description>List Files
 List Files</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="243" name="access" description="public"/>
           <tag line="243" name="param" description="Directory to scan" type="\Powerstack\Core\sting" variable="$dir">
             <type by_reference="false">\Powerstack\Core\sting</type>
@@ -888,7 +888,7 @@ List Files</description>
         </docblock>
         <argument line="253">
           <name>$dir</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="253">
@@ -908,7 +908,7 @@ List Files</description>
         <docblock line="268">
           <description>Mkdir
 Make a directory</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="268" name="see" description="\Powerstack\Core\http://php.net/mkdir" refers="\Powerstack\Core\http://php.net/mkdir"/>
           <tag line="268" name="access" description="public"/>
           <tag line="268" name="param" description="Path to new dir" type="string" variable="$dir">
@@ -926,7 +926,7 @@ Make a directory</description>
         </docblock>
         <argument line="279">
           <name>$dir</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="279">
@@ -946,7 +946,7 @@ Make a directory</description>
         <docblock line="283">
           <description>Find
 Find a file or pattern</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="283" name="see" description="\Powerstack\Core\http://php.net/glob" refers="\Powerstack\Core\http://php.net/glob"/>
           <tag line="283" name="access" description="public"/>
           <tag line="283" name="param" description="Path to search in" type="string" variable="$path">
@@ -961,12 +961,12 @@ Find a file or pattern</description>
         </docblock>
         <argument line="293">
           <name>$path</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="293">
           <name>$pattern</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -980,7 +980,7 @@ Find a file or pattern</description>
     <docblock line="19">
       <description>Template Factory
 Template Factory class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -991,10 +991,10 @@ Template Factory class for Powerstack</description>
       <full_name>\Powerstack\Core\TemplateFactory</full_name>
       <property final="false" static="false" visibility="private" line="36" namespace="Powerstack\Core" package="Default">
         <name>$template</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Template object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="class" type="\Powerstack\Core\Template">
             <type by_reference="false">\Powerstack\Core\Template</type>
@@ -1019,7 +1019,7 @@ Create a new Powerstack\Core\TemplateFactory object</description>
         <docblock line="65">
           <description>Init
 Initalize the template class</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="65" name="access" description="public"/>
           <tag line="65" name="return" description="true on success, false otherwise" type="bool">
             <type by_reference="false">bool</type>
@@ -1032,7 +1032,7 @@ Initalize the template class</description>
         <docblock line="76">
           <description>Render
 Render a template</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="76" name="access" description="public"/>
           <tag line="76" name="param" description="Template to render" type="string" variable="$tpl">
             <type by_reference="false">string</type>
@@ -1049,7 +1049,7 @@ Render a template</description>
         </docblock>
         <argument line="86">
           <name>$template</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="86">
@@ -1074,7 +1074,7 @@ Render a template</description>
     <docblock line="19">
       <description>Exception
 Exception class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1088,7 +1088,7 @@ Exception class for Powerstack</description>
         <full_name>__construct</full_name>
         <argument line="30">
           <name>$message</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="30">
@@ -1112,7 +1112,7 @@ Exception class for Powerstack</description>
     <docblock line="19">
       <description>Cookie
 Cookie class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1123,10 +1123,10 @@ Cookie class for Powerstack</description>
       <full_name>\Powerstack\Core\Cookie</full_name>
       <property final="false" static="false" visibility="private" line="36" namespace="Powerstack\Core" package="Default">
         <name>$cookie_name</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Cookie Name</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -1135,10 +1135,10 @@ Cookie class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="44" namespace="Powerstack\Core" package="Default">
         <name>$expire</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Cookie Expiry</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="private"/>
           <tag line="38" name="var" description="" type="int">
             <type by_reference="false">int</type>
@@ -1147,10 +1147,10 @@ Cookie class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="52" namespace="Powerstack\Core" package="Default">
         <name>$path</name>
-        <default></default>
+        <default/>
         <docblock line="46">
           <description>Cookie Path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="access" description="private"/>
           <tag line="46" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -1159,10 +1159,10 @@ Cookie class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="60" namespace="Powerstack\Core" package="Default">
         <name>$domain</name>
-        <default></default>
+        <default/>
         <docblock line="54">
           <description>Cookie Domain</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="access" description="private"/>
           <tag line="54" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -1171,10 +1171,10 @@ Cookie class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="68" namespace="Powerstack\Core" package="Default">
         <name>$secure</name>
-        <default></default>
+        <default/>
         <docblock line="62">
           <description>Cookie Secure</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="62" name="access" description="private"/>
           <tag line="62" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
@@ -1183,10 +1183,10 @@ Cookie class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="76" namespace="Powerstack\Core" package="Default">
         <name>$httponly</name>
-        <default></default>
+        <default/>
         <docblock line="70">
           <description>Cookie HTTP Only</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="70" name="access" description="private"/>
           <tag line="70" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
@@ -1217,7 +1217,7 @@ Create a new Powerstack\Core\Cookie object</description>
         <docblock line="115">
           <description>Get
 Get the value of a cookie</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="115" name="access" description="public"/>
           <tag line="115" name="param" description="Name of cookie to get" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1228,7 +1228,7 @@ Get the value of a cookie</description>
         </docblock>
         <argument line="123">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1238,7 +1238,7 @@ Get the value of a cookie</description>
         <docblock line="133">
           <description>Set
 Set a cookie</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="133" name="access" description="public"/>
           <tag line="133" name="link" description="http://php.net/set_cookie" link="http://php.net/set_cookie"/>
           <tag line="133" name="param" description="Name of cookie" type="string" variable="$name">
@@ -1268,12 +1268,12 @@ Set a cookie</description>
         </docblock>
         <argument line="148">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="148">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="148">
@@ -1313,7 +1313,7 @@ Set a cookie</description>
     <docblock line="19">
       <description>Session Simple
 Simple Session class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1345,7 +1345,7 @@ Initalize the session storage</description>
         <docblock line="54">
           <description>Set
 Set a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="access" description="public"/>
           <tag line="54" name="param" description="Name of session" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1359,12 +1359,12 @@ Set a session</description>
         </docblock>
         <argument line="63">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="63">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1374,7 +1374,7 @@ Set a session</description>
         <docblock line="70">
           <description>Get
 Get a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="70" name="access" description="public"/>
           <tag line="70" name="param" description="Name of session to get" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1385,7 +1385,7 @@ Get a session</description>
         </docblock>
         <argument line="78">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1395,7 +1395,7 @@ Get a session</description>
         <docblock line="85">
           <description>Delete
 Delete a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="85" name="access" description="public"/>
           <tag line="85" name="param" description="Name of session to delete" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1406,7 +1406,7 @@ Delete a session</description>
         </docblock>
         <argument line="93">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1419,7 +1419,7 @@ Delete a session</description>
     <docblock line="19">
       <description>Config
 Config class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1430,10 +1430,10 @@ Config class for Powerstack</description>
       <full_name>\Powerstack\Core\Config</full_name>
       <property final="false" static="false" visibility="protected" line="36" namespace="Powerstack\Core" package="Default">
         <name>$config</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Config object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="protected"/>
           <tag line="30" name="var" description="" type="\Powerstack\Core\stdclass">
             <type by_reference="false">\Powerstack\Core\stdclass</type>
@@ -1446,7 +1446,7 @@ Config class for Powerstack</description>
         <docblock line="38">
           <description>__construct
 Create a new Powerstack\Core\Config object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="public"/>
           <tag line="38" name="param" description="Path to config yaml file" type="string" variable="$conf_file">
             <type by_reference="false">string</type>
@@ -1457,7 +1457,7 @@ Create a new Powerstack\Core\Config object</description>
         </docblock>
         <argument line="46">
           <name>$conf_file</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1467,7 +1467,7 @@ Create a new Powerstack\Core\Config object</description>
         <docblock line="58">
           <description>__get
 Get a class variable</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="58" name="param" description="Name of class var to get" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
@@ -1477,7 +1477,7 @@ Get a class variable</description>
         </docblock>
         <argument line="65">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1487,7 +1487,7 @@ Get a class variable</description>
         <docblock line="73">
           <description>__set
 Set a class variable</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="73" name="param" description="Name of class var to set" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
@@ -1500,12 +1500,12 @@ Set a class variable</description>
         </docblock>
         <argument line="81">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="81">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1515,7 +1515,7 @@ Set a class variable</description>
         <docblock line="85">
           <description>Load Config
 Load the config file into class variables</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="85" name="access" description="protected"/>
           <tag line="85" name="param" description="Path to config file" type="string" variable="$conf_file">
             <type by_reference="false">string</type>
@@ -1529,7 +1529,7 @@ Load the config file into class variables</description>
         </docblock>
         <argument line="94">
           <name>$conf_file</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1539,7 +1539,7 @@ Load the config file into class variables</description>
         <docblock line="172">
           <description>Array To Obj
 Convert an array to a object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="172" name="access" description="protected"/>
           <tag line="172" name="param" description="Array to convert to object" type="array" variable="$array">
             <type by_reference="false">array</type>
@@ -1550,7 +1550,7 @@ Convert an array to a object</description>
         </docblock>
         <argument line="180">
           <name>$array</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1563,7 +1563,7 @@ Convert an array to a object</description>
     <docblock line="19">
       <description>Hooks
 Hooks class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1574,10 +1574,10 @@ Hooks class for Powerstack</description>
       <full_name>\Powerstack\Core\Hooks</full_name>
       <property final="false" static="false" visibility="private" line="35" namespace="Powerstack\Core" package="Default">
         <name>$hooks</name>
-        <default></default>
+        <default/>
         <docblock line="31">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -1590,7 +1590,7 @@ Hooks class for Powerstack</description>
         <docblock line="37">
           <description>Register
 Register a hook to be executed</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="37" name="acess" description="public"/>
           <tag line="37" name="param" description="Name of hook to register" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1604,12 +1604,12 @@ Register a hook to be executed</description>
         </docblock>
         <argument line="46">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="46">
           <name>$function</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1619,7 +1619,7 @@ Register a hook to be executed</description>
         <docblock line="55">
           <description>Exists
 Check if a hook exists</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="55" name="access" description="public"/>
           <tag line="55" name="param" description="Name of hook to check" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1630,7 +1630,7 @@ Check if a hook exists</description>
         </docblock>
         <argument line="63">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1640,7 +1640,7 @@ Check if a hook exists</description>
         <docblock line="71">
           <description>Get
 Get all the functions that have been registered for a hook</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="71" name="access" description="public"/>
           <tag line="71" name="param" description="Name of hook to get functions for" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -1651,7 +1651,7 @@ Get all the functions that have been registered for a hook</description>
         </docblock>
         <argument line="79">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1667,7 +1667,7 @@ Get all the functions that have been registered for a hook</description>
     <docblock line="19">
       <description>Params
 Params class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1682,7 +1682,7 @@ Params class for Powerstack</description>
         <docblock line="31">
           <description>__construct
 Create a new Powerstack\Core\Params object</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="46" package="Default">
@@ -1691,7 +1691,7 @@ Create a new Powerstack\Core\Params object</description>
         <docblock line="39">
           <description>__get
 Get a class var value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="39" name="param" description="Name of class var to get" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
@@ -1701,7 +1701,7 @@ Get a class var value</description>
         </docblock>
         <argument line="46">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1711,7 +1711,7 @@ Get a class var value</description>
         <docblock line="54">
           <description>Parse Uri
 Parse a requested uri for any placeholder values and add them to the class vars</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="access" description="public"/>
           <tag line="54" name="param" description="The route uri" type="string" variable="$routeuri">
             <type by_reference="false">string</type>
@@ -1725,12 +1725,12 @@ Parse a requested uri for any placeholder values and add them to the class vars<
         </docblock>
         <argument line="63">
           <name>$routeuri</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="63">
           <name>$requesturi</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1740,7 +1740,7 @@ Parse a requested uri for any placeholder values and add them to the class vars<
         <docblock line="75">
           <description>Init
 Initalize the object and load anything for $_GET &amp; $_POST into the class vars</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="75" name="access" description="protected"/>
           <tag line="75" name="return" description="" type="void">
             <type by_reference="false">void</type>
@@ -1756,7 +1756,7 @@ Initalize the object and load anything for $_GET &amp; $_POST into the class var
     <docblock line="19">
       <description>Exception Handler
 Exception Handler class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1771,7 +1771,7 @@ Exception Handler class for Powerstack</description>
         <docblock line="30">
           <description>Handler
 Handle errors</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="public"/>
           <tag line="30" name="param" description="Exception object" type="\Powerstack\Core\exception" variable="$exception">
             <type by_reference="false">\Powerstack\Core\exception</type>
@@ -1782,7 +1782,7 @@ Handle errors</description>
         </docblock>
         <argument line="38">
           <name>$exception</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1792,7 +1792,7 @@ Handle errors</description>
         <docblock line="58">
           <description>Log
 Log an error</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="58" name="access" description="public"/>
           <tag line="58" name="param" description="Error to log" type="string" variable="$message">
             <type by_reference="false">string</type>
@@ -1803,7 +1803,7 @@ Log an error</description>
         </docblock>
         <argument line="66">
           <name>$message</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1816,7 +1816,7 @@ Log an error</description>
     <docblock line="19">
       <description>Template Simple
 Simple Template class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1827,10 +1827,10 @@ Simple Template class for Powerstack</description>
       <full_name>\Powerstack\Core\TemplateSimple</full_name>
       <property final="false" static="false" visibility="private" line="36" namespace="Powerstack\Core" package="Default">
         <name>$viewsdir</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Voess Directory</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -1839,10 +1839,10 @@ Simple Template class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="44" namespace="Powerstack\Core" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Config object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="private"/>
           <tag line="38" name="var" description="" type="\Powerstack\Core\stdclass">
             <type by_reference="false">\Powerstack\Core\stdclass</type>
@@ -1888,7 +1888,7 @@ changing values on the fly, function must return the $params array.&lt;/p&gt;</l
         </docblock>
         <argument line="76">
           <name>$tpl</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="76">
@@ -1907,11 +1907,11 @@ changing values on the fly, function must return the $params array.&lt;/p&gt;</l
       <error line="29" code="50000">No DocBlock was found for \Powerstack\Core\TemplateSimple</error>
     </parse_markers>
   </file>
-  <file path="lib/powerstack/core/registry.php" hash="12056ab5c9a4c1ce193098b713fa7e18" package="Powerstack\Core">
+  <file path="lib/powerstack/core/registry.php" hash="4ff1d10a9caca4eb2a0d150e3092854d" package="Powerstack\Core">
     <docblock line="19">
       <description>Registry
 Registry class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -1925,7 +1925,7 @@ Registry class for Powerstack</description>
         <default>array()</default>
         <docblock line="30">
           <description>Array to store all registry items</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="protected"/>
           <tag line="30" name="var" description="" type="array">
             <type by_reference="false">array</type>
@@ -1937,7 +1937,7 @@ Registry class for Powerstack</description>
         <default>null</default>
         <docblock line="38">
           <description>Singleton Instance</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="protected"/>
           <tag line="38" name="var" description="Object" type="\Powerstack\Core\Powerstack\Core\Registry">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Registry</type>
@@ -1950,7 +1950,7 @@ Registry class for Powerstack</description>
         <docblock line="46">
           <description>Get Instance
 Get instance of Powerstack\Core\Registry</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="return" description="" type="\Powerstack\Core\Powerstack\Core\Registry">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Registry</type>
           </tag>
@@ -1962,7 +1962,7 @@ Get instance of Powerstack\Core\Registry</description>
         <docblock line="60">
           <description>Get
 Get a value from the registry</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="60" name="param" description="Name of registry item to get" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
@@ -1972,7 +1972,7 @@ Get a value from the registry</description>
         </docblock>
         <argument line="67">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1982,7 +1982,7 @@ Get a value from the registry</description>
         <docblock line="75">
           <description>Set
 Set a item in the registry</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="75" name="param" description="Name of item to store" type="\Powerstack\Core\sting" variable="$name">
             <type by_reference="false">\Powerstack\Core\sting</type>
           </tag>
@@ -1995,12 +1995,12 @@ Set a item in the registry</description>
         </docblock>
         <argument line="83">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="83">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2010,7 +2010,7 @@ Set a item in the registry</description>
         <docblock line="87">
           <description>Exists
 See if an item exists in the registry</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="87" name="access" description="public"/>
           <tag line="87" name="param" description="Name of item to check" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -2021,26 +2021,47 @@ See if an item exists in the registry</description>
         </docblock>
         <argument line="95">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Core" line="104" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Powerstack\Core" line="107" package="Default">
+        <name>delete</name>
+        <full_name>delete</full_name>
+        <docblock line="99">
+          <description>Delete
+Delete an item for the registry</description>
+          <long-description/>
+          <tag line="99" name="access" description="public"/>
+          <tag line="99" name="param" description="Name of item to remove" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="99" name="return" description="true on success, false otherwise" type="bool">
+            <type by_reference="false">bool</type>
+          </tag>
+        </docblock>
+        <argument line="107">
+          <name>$name</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Core" line="121" package="Default">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="99">
+        <docblock line="116">
           <description>__construct</description>
-          <long-description></long-description>
-          <tag line="99" name="access" description="private"/>
+          <long-description/>
+          <tag line="116" name="access" description="private"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Core" line="112" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Powerstack\Core" line="129" package="Default">
         <name>__clone</name>
         <full_name>__clone</full_name>
-        <docblock line="107">
+        <docblock line="124">
           <description>__clone</description>
-          <long-description></long-description>
-          <tag line="107" name="access" description="private"/>
+          <long-description/>
+          <tag line="124" name="access" description="private"/>
         </docblock>
       </method>
     </class>
@@ -2052,7 +2073,7 @@ See if an item exists in the registry</description>
     <docblock line="19">
       <description>NotFoundException
 NotFoundException class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -2066,11 +2087,11 @@ NotFoundException class for Powerstack</description>
       <error line="30" code="50000">No DocBlock was found for \Powerstack\Core\NotFoundException</error>
     </parse_markers>
   </file>
-  <file path="lib/powerstack/core/request.php" hash="e961729a6481dbb77cc046acbd610f53" package="Powerstack\Core">
+  <file path="lib/powerstack/core/request.php" hash="0a775d34f6b08658a5e0cdd33371b6db" package="Powerstack\Core">
     <docblock line="19">
       <description>Request
 Request class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -2081,10 +2102,10 @@ Request class for Powerstack</description>
       <full_name>\Powerstack\Core\Request</full_name>
       <property final="false" static="false" visibility="public" line="36" namespace="Powerstack\Core" package="Default">
         <name>$request_method</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Request Method</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="public"/>
           <tag line="30" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2093,10 +2114,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="44" namespace="Powerstack\Core" package="Default">
         <name>$request_uri</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Request URI</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="public"/>
           <tag line="38" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2105,10 +2126,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="52" namespace="Powerstack\Core" package="Default">
         <name>$https</name>
-        <default></default>
+        <default/>
         <docblock line="46">
           <description>HTTPS</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="access" description="public"/>
           <tag line="46" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
@@ -2117,10 +2138,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="60" namespace="Powerstack\Core" package="Default">
         <name>$remote_address</name>
-        <default></default>
+        <default/>
         <docblock line="54">
           <description>Remote Address</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="access" description="public"/>
           <tag line="54" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2129,10 +2150,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="68" namespace="Powerstack\Core" package="Default">
         <name>$http_referer</name>
-        <default></default>
+        <default/>
         <docblock line="62">
           <description>HTTP Referer</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="62" name="access" description="public"/>
           <tag line="62" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2141,10 +2162,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="76" namespace="Powerstack\Core" package="Default">
         <name>$user_agent</name>
-        <default></default>
+        <default/>
         <docblock line="70">
           <description>User Agent</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="70" name="access" description="public"/>
           <tag line="70" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2153,10 +2174,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="84" namespace="Powerstack\Core" package="Default">
         <name>$query_string</name>
-        <default></default>
+        <default/>
         <docblock line="78">
           <description>Query String</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="78" name="access" description="public"/>
           <tag line="78" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2165,10 +2186,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="92" namespace="Powerstack\Core" package="Default">
         <name>$base_uri</name>
-        <default></default>
+        <default/>
         <docblock line="86">
           <description>Base Uri</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="86" name="access" description="public"/>
           <tag line="86" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -2177,10 +2198,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="100" namespace="Powerstack\Core" package="Default">
         <name>$cookie</name>
-        <default></default>
+        <default/>
         <docblock line="94">
           <description>Powerstack\Core\Cookie object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="94" name="access" description="public"/>
           <tag line="94" name="var" description="" type="\Powerstack\Core\Powerstack\Core\Cookie">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\Cookie</type>
@@ -2189,10 +2210,10 @@ Request class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="public" line="108" namespace="Powerstack\Core" package="Default">
         <name>$session</name>
-        <default></default>
+        <default/>
         <docblock line="102">
           <description>Powerstack\Core\Session object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="102" name="access" description="public"/>
           <tag line="102" name="var" description="" type="\Powerstack\Core\Powerstack\Core\SessionFactory">
             <type by_reference="false">\Powerstack\Core\Powerstack\Core\SessionFactory</type>
@@ -2205,7 +2226,7 @@ Request class for Powerstack</description>
         <docblock line="110">
           <description>__construct
 Create a new Powerstack\Core\Request object</description>
-          <long-description></long-description>
+          <long-description/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="protected" namespace="Powerstack\Core" line="134" package="Default">
@@ -2214,7 +2235,7 @@ Create a new Powerstack\Core\Request object</description>
         <docblock line="127">
           <description>Get Request Uri
 Get the requet uri either for $_SERVER['REQUEST_URI'] or $_GET['q']</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="127" name="access" description="protected"/>
           <tag line="127" name="return" description="the request uri" type="string">
             <type by_reference="false">string</type>
@@ -2230,7 +2251,7 @@ Get the requet uri either for $_SERVER['REQUEST_URI'] or $_GET['q']</description
     <docblock line="19">
       <description>Error Handler
 Error Handler class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -2245,7 +2266,7 @@ Error Handler class for Powerstack</description>
         <docblock line="30">
           <description>Handler
 Handle errors</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="public"/>
           <tag line="30" name="param" description="Error Number" type="int" variable="$errno">
             <type by_reference="false">int</type>
@@ -2265,22 +2286,22 @@ Handle errors</description>
         </docblock>
         <argument line="41">
           <name>$errno</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="41">
           <name>$errstr</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="41">
           <name>$errfile</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="41">
           <name>$errline</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2290,7 +2311,7 @@ Handle errors</description>
         <docblock line="85">
           <description>Log
 Log an error</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="85" name="access" description="public"/>
           <tag line="85" name="param" description="Error to log" type="string" variable="$message">
             <type by_reference="false">string</type>
@@ -2301,7 +2322,7 @@ Log an error</description>
         </docblock>
         <argument line="93">
           <name>$message</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2314,7 +2335,7 @@ Log an error</description>
     <docblock line="19">
       <description>SessionFactory
 SessionFactory class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Core"/>
@@ -2325,10 +2346,10 @@ SessionFactory class for Powerstack</description>
       <full_name>\Powerstack\Core\SessionFactory</full_name>
       <property final="false" static="false" visibility="private" line="36" namespace="Powerstack\Core" package="Default">
         <name>$session</name>
-        <default></default>
+        <default/>
         <docblock line="30">
           <description>Session object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="object" type="\Powerstack\Core\Session">
             <type by_reference="false">\Powerstack\Core\Session</type>
@@ -2337,10 +2358,10 @@ SessionFactory class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="44" namespace="Powerstack\Core" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="38">
           <description>Config object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="38" name="access" description="private"/>
           <tag line="38" name="var" description="" type="\Powerstack\Core\stdclass">
             <type by_reference="false">\Powerstack\Core\stdclass</type>
@@ -2366,7 +2387,7 @@ Create a new Powerstack\Core\SessionFactory object</description>
         <docblock line="73">
           <description>Init
 Initalize a session class</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="73" name="access" description="public"/>
           <tag line="73" name="return" description="true on success, false otherwise" type="bool">
             <type by_reference="false">bool</type>
@@ -2379,7 +2400,7 @@ Initalize a session class</description>
         <docblock line="84">
           <description>Set
 Set a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="84" name="acccess" description="public"/>
           <tag line="84" name="param" description="Name of session" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -2393,12 +2414,12 @@ Set a session</description>
         </docblock>
         <argument line="93">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="93">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2408,7 +2429,7 @@ Set a session</description>
         <docblock line="97">
           <description>Get
 Get a session value</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="97" name="access" description="public"/>
           <tag line="97" name="param" description="Name of session to get" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -2419,7 +2440,7 @@ Get a session value</description>
         </docblock>
         <argument line="105">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2429,7 +2450,7 @@ Get a session value</description>
         <docblock line="109">
           <description>Delete
 Delete a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="109" name="access" description="public"/>
           <tag line="109" name="param" description="Name of session to delete" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -2440,7 +2461,7 @@ Delete a session</description>
         </docblock>
         <argument line="117">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2453,7 +2474,7 @@ Delete a session</description>
     <docblock line="19">
       <description>Database
 PDO database class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -2464,10 +2485,10 @@ PDO database class for Powerstack</description>
       <full_name>\Powerstack\Plugins\Database</full_name>
       <property final="false" static="false" visibility="private" line="35" namespace="Powerstack\Plugins" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="31">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="\Powerstack\Plugins\stdclass">
             <type by_reference="false">\Powerstack\Plugins\stdclass</type>
@@ -2476,10 +2497,10 @@ PDO database class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="41" namespace="Powerstack\Plugins" package="Default">
         <name>$db</name>
-        <default></default>
+        <default/>
         <docblock line="37">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="37" name="access" description="private"/>
           <tag line="37" name="var" description="" type="\Powerstack\Plugins\PDO">
             <type by_reference="false">\Powerstack\Plugins\PDO</type>
@@ -2488,10 +2509,10 @@ PDO database class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="47" namespace="Powerstack\Plugins" package="Default">
         <name>$statement</name>
-        <default></default>
+        <default/>
         <docblock line="43">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="43" name="access" description="private"/>
           <tag line="43" name="var" description="" type="\Powerstack\Plugins\PDOStatment">
             <type by_reference="false">\Powerstack\Plugins\PDOStatment</type>
@@ -2502,8 +2523,8 @@ PDO database class for Powerstack</description>
         <name>$connected</name>
         <default>false</default>
         <docblock line="49">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="49" name="access" description="private"/>
           <tag line="49" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
@@ -2548,7 +2569,7 @@ to the database. It passes the a reference to the new PDO object.&lt;/p&gt;</lon
         <docblock line="121">
           <description>Is Connected
 Are you connected to the database</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="121" name="access" description="public"/>
           <tag line="121" name="return" description="true if connected, false otherwise" type="bool">
             <type by_reference="false">bool</type>
@@ -2561,7 +2582,7 @@ Are you connected to the database</description>
         <docblock line="132">
           <description>Execute Sql
 Execute a sql command</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="132" name="access" description="public"/>
           <tag line="132" name="param" description="Sql query to execute" type="string" variable="$sql">
             <type by_reference="false">string</type>
@@ -2578,7 +2599,7 @@ Execute a sql command</description>
         </docblock>
         <argument line="142">
           <name>$sql</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="142">
@@ -2593,7 +2614,7 @@ Execute a sql command</description>
         <docblock line="151">
           <description>Select
 Run a select query on the database</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="151" name="access" description="public"/>
           <tag line="151" name="param" description="Name of table to query" type="string" variable="$table">
             <type by_reference="false">string</type>
@@ -2622,7 +2643,7 @@ Run a select query on the database</description>
         </docblock>
         <argument line="165">
           <name>$table</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="165">
@@ -2657,7 +2678,7 @@ Run a select query on the database</description>
         <docblock line="223">
           <description>Insert
 Insert a record into the database</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="223" name="access" description="public"/>
           <tag line="223" name="param" description="Name of table to insert into" type="string" variable="$table">
             <type by_reference="false">string</type>
@@ -2674,12 +2695,12 @@ Insert a record into the database</description>
         </docblock>
         <argument line="233">
           <name>$table</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="233">
           <name>$record</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2689,7 +2710,7 @@ Insert a record into the database</description>
         <docblock line="254">
           <description>Update
 Update a record into the database</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="254" name="access" description="public"/>
           <tag line="254" name="param" description="Name of table to update" type="string" variable="$table">
             <type by_reference="false">string</type>
@@ -2709,17 +2730,17 @@ Update a record into the database</description>
         </docblock>
         <argument line="265">
           <name>$table</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="265">
           <name>$record</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="265">
           <name>$where</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2729,7 +2750,7 @@ Update a record into the database</description>
         <docblock line="298">
           <description>Delete
 Delete a record from the database</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="298" name="access" description="public"/>
           <tag line="298" name="param" description="Name of table to delete from" type="string" variable="$table">
             <type by_reference="false">string</type>
@@ -2746,12 +2767,12 @@ Delete a record from the database</description>
         </docblock>
         <argument line="308">
           <name>$table</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="308">
           <name>$where</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -2761,7 +2782,7 @@ Delete a record from the database</description>
         <docblock line="332">
           <description>Fetch
 Fetch a row from the resultset</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="332" name="access" description="public"/>
           <tag line="332" name="param" description="PDO Fetch style. (optional, default is PDO::FETCH_OBJ)" type="int" variable="$fetch">
             <type by_reference="false">int</type>
@@ -2780,7 +2801,7 @@ Fetch a row from the resultset</description>
         <docblock line="344">
           <description>FetchAll
 Fetch all rows from the resultset</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="344" name="access" description="public"/>
           <tag line="344" name="param" description="PDO Fetch style. (optional, default is PDO::FETCH_OBJ)" type="int" variable="$fetch">
             <type by_reference="false">int</type>
@@ -2799,7 +2820,7 @@ Fetch all rows from the resultset</description>
         <docblock line="356">
           <description>Row Count
 Gets number of rows selected or row affected</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="356" name="access" description="public"/>
           <tag line="356" name="return" description="number of rows selected or row affected" type="int">
             <type by_reference="false">int</type>
@@ -2812,7 +2833,7 @@ Gets number of rows selected or row affected</description>
         <docblock line="367">
           <description>Statement Error
 Get error info about the last statement run</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="367" name="access" description="public"/>
           <tag line="367" name="return" description="with error info" type="array">
             <type by_reference="false">array</type>
@@ -2825,7 +2846,7 @@ Get error info about the last statement run</description>
         <docblock line="381">
           <description>Database Error
 Get error info from database handle</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="381" name="access" description="public"/>
           <tag line="381" name="return" description="with error info" type="array">
             <type by_reference="false">array</type>
@@ -2838,7 +2859,7 @@ Get error info from database handle</description>
         <docblock line="395">
           <description>Build Dsn
 Builds the PDO Dsn string</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="395" name="access" description="private"/>
           <tag line="395" name="return" description="PDO Dsn" type="string">
             <type by_reference="false">string</type>
@@ -2858,7 +2879,7 @@ Builds the PDO Dsn string</description>
     <docblock line="19">
       <description>Recaptcha
 Recaptcha class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -2872,10 +2893,10 @@ Recaptcha class for Powerstack</description>
       <full_name>\Powerstack\Plugins\Captcha\Recaptcha</full_name>
       <property final="false" static="false" visibility="private" line="36" namespace="Powerstack\Plugins\Captcha" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="32">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="32" name="access" description="private"/>
           <tag line="32" name="var" description="" type="\Powerstack\Plugins\Captcha\stdclass">
             <type by_reference="false">\Powerstack\Plugins\Captcha\stdclass</type>
@@ -2886,8 +2907,8 @@ Recaptcha class for Powerstack</description>
         <name>$error</name>
         <default>null</default>
         <docblock line="38">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="38" name="access" description="private"/>
           <tag line="38" name="var" description="" type="\Powerstack\Plugins\Captcha\ReCaptchaResponse">
             <type by_reference="false">\Powerstack\Plugins\Captcha\ReCaptchaResponse</type>
@@ -2914,7 +2935,7 @@ Create a new Powerstack\Plugins\Captcha\Recaptcha object</description>
         <docblock line="70">
           <description>Get
 Get the captcha html</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="70" name="access" description="public"/>
           <tag line="70" name="return" description="HTML for recaptcha" type="string">
             <type by_reference="false">string</type>
@@ -2927,7 +2948,7 @@ Get the captcha html</description>
         <docblock line="81">
           <description>Check
 Check validates the input to recaptcha</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="81" name="access" description="public"/>
           <tag line="81" name="return" description="true on success, false otherwise" type="bool">
             <type by_reference="false">bool</type>
@@ -2945,7 +2966,7 @@ Check validates the input to recaptcha</description>
     <docblock line="19">
       <description>Piwik
 Piwik class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -2956,10 +2977,10 @@ Piwik class for Powerstack</description>
       <full_name>\Powerstack\Plugins\Analytics\Piwik</full_name>
       <property final="false" static="false" visibility="private" line="34" namespace="Powerstack\Plugins\Analytics" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="30">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="" type="\Powerstack\Plugins\Analytics\stdclass">
             <type by_reference="false">\Powerstack\Plugins\Analytics\stdclass</type>
@@ -2986,7 +3007,7 @@ Create a new Powerstack\Plugins\Analytics\Piwik object</description>
         <docblock line="57">
           <description>Get
 Get the javscript tracking code for you site</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="57" name="access" description="public"/>
           <tag line="57" name="return" description="javascript tracking code for piwik" type="string">
             <type by_reference="false">string</type>
@@ -3003,7 +3024,7 @@ Get the javscript tracking code for you site</description>
     <docblock line="19">
       <description>Template Twig
 Twig wrapper class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -3014,10 +3035,10 @@ Twig wrapper class for Powerstack</description>
       <full_name>\Powerstack\Plugins\Template\TemplateTwig</full_name>
       <property final="false" static="false" visibility="private" line="35" namespace="Powerstack\Plugins\Template" package="Default">
         <name>$twig</name>
-        <default></default>
+        <default/>
         <docblock line="31">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="\Powerstack\Plugins\Template\TwigEnvironment">
             <type by_reference="false">\Powerstack\Plugins\Template\TwigEnvironment</type>
@@ -3026,10 +3047,10 @@ Twig wrapper class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="41" namespace="Powerstack\Plugins\Template" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="37">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="37" name="access" description="private"/>
           <tag line="37" name="var" description="" type="\Powerstack\Plugins\Template\stdclass">
             <type by_reference="false">\Powerstack\Plugins\Template\stdclass</type>
@@ -3038,10 +3059,10 @@ Twig wrapper class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="47" namespace="Powerstack\Plugins\Template" package="Default">
         <name>$viewsdir</name>
-        <default></default>
+        <default/>
         <docblock line="43">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="43" name="access" description="private"/>
           <tag line="43" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -3092,7 +3113,7 @@ changing values on the fly, function must return the $params array.&lt;/p&gt;</l
         </docblock>
         <argument line="92">
           <name>$tpl</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="92">
@@ -3118,7 +3139,7 @@ changing values on the fly, function must return the $params array.&lt;/p&gt;</l
     <docblock line="19">
       <description>Memcached
 Memcached wrapper for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -3129,10 +3150,10 @@ Memcached wrapper for Powerstack</description>
       <full_name>\Powerstack\Plugins\Memcached</full_name>
       <property final="false" static="false" visibility="private" line="35" namespace="Powerstack\Plugins" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="31">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="\Powerstack\Plugins\stdclass">
             <type by_reference="false">\Powerstack\Plugins\stdclass</type>
@@ -3141,10 +3162,10 @@ Memcached wrapper for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="41" namespace="Powerstack\Plugins" package="Default">
         <name>$memcached</name>
-        <default></default>
+        <default/>
         <docblock line="37">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="37" name="access" description="private"/>
           <tag line="37" name="var" description="" type="\Powerstack\Plugins\Memcached">
             <type by_reference="false">\Powerstack\Plugins\Memcached</type>
@@ -3170,7 +3191,7 @@ Create a new Powerstack\Plugins\Memcached object</description>
         <docblock line="79">
           <description>Add Server
 Add a server to the server pool</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="79" name="access" description="public"/>
           <tag line="79" name="param" description="Hostname/IP of memcached server" type="string" variable="$host">
             <type by_reference="false">string</type>
@@ -3187,12 +3208,12 @@ Add a server to the server pool</description>
         </docblock>
         <argument line="89">
           <name>$host</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="89">
           <name>$port</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="89">
@@ -3207,7 +3228,7 @@ Add a server to the server pool</description>
         <docblock line="93">
           <description>Add Servers
 Add multiple servers to the pool</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="93" name="access" description="public"/>
           <tag line="93" name="param" description="Array of server connection details" type="array" variable="$servers">
             <type by_reference="false">array</type>
@@ -3218,7 +3239,7 @@ Add multiple servers to the pool</description>
         </docblock>
         <argument line="101">
           <name>$servers</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3228,7 +3249,7 @@ Add multiple servers to the pool</description>
         <docblock line="105">
           <description>Add
 Add an item to memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="105" name="access" description="public"/>
           <tag line="105" name="param" description="Key to store item under" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3245,12 +3266,12 @@ Add an item to memcached</description>
         </docblock>
         <argument line="115">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="115">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="115">
@@ -3265,7 +3286,7 @@ Add an item to memcached</description>
         <docblock line="119">
           <description>Append
 Append a string to a item already stored</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="119" name="access" description="public"/>
           <tag line="119" name="param" description="Key item is stored under" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3279,12 +3300,12 @@ Append a string to a item already stored</description>
         </docblock>
         <argument line="128">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="128">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3294,7 +3315,7 @@ Append a string to a item already stored</description>
         <docblock line="132">
           <description>Delete
 Delete an item from memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="132" name="access" description="public"/>
           <tag line="132" name="param" description="Key to delete" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3308,7 +3329,7 @@ Delete an item from memcached</description>
         </docblock>
         <argument line="141">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="141">
@@ -3323,7 +3344,7 @@ Delete an item from memcached</description>
         <docblock line="145">
           <description>Delete Multi
 Delete multiple items from memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="145" name="access" description="public"/>
           <tag line="145" name="param" description="Array of keys to delete" type="array" variable="$key">
             <type by_reference="false">array</type>
@@ -3337,7 +3358,7 @@ Delete multiple items from memcached</description>
         </docblock>
         <argument line="154">
           <name>$keys</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="154">
@@ -3352,7 +3373,7 @@ Delete multiple items from memcached</description>
         <docblock line="158">
           <description>Flush
 Flush all values from memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="158" name="access" description="public"/>
           <tag line="158" name="param" description="Time to wait before flushing memcached. (optional, default is 0)" type="int" variable="$delay">
             <type by_reference="false">int</type>
@@ -3373,7 +3394,7 @@ Flush all values from memcached</description>
         <docblock line="170">
           <description>Get
 Get an item from memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="170" name="access" description="public"/>
           <tag line="170" name="param" description="Key to get" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3384,7 +3405,7 @@ Get an item from memcached</description>
         </docblock>
         <argument line="178">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3394,7 +3415,7 @@ Get an item from memcached</description>
         <docblock line="182">
           <description>Get All Keys
 Gets the keys stored on all the servers</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="182" name="access" description="public"/>
           <tag line="182" name="return" description="keys stored on all the servers on success, false otherwise" type="array">
             <type by_reference="false">array</type>
@@ -3407,7 +3428,7 @@ Gets the keys stored on all the servers</description>
         <docblock line="193">
           <description>Get Multi
 Get multiple items from memcached</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="193" name="access" description="public"/>
           <tag line="193" name="param" description="Array of keys to get" type="array" variable="$key">
             <type by_reference="false">array</type>
@@ -3418,7 +3439,7 @@ Get multiple items from memcached</description>
         </docblock>
         <argument line="201">
           <name>$keys</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3428,7 +3449,7 @@ Get multiple items from memcached</description>
         <docblock line="205">
           <description>Get Result Code
 Return the result code of the last operation</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="205" name="access" description="public"/>
           <tag line="205" name="return" description="code of the last Memcached operation" type="int">
             <type by_reference="false">int</type>
@@ -3441,7 +3462,7 @@ Return the result code of the last operation</description>
         <docblock line="216">
           <description>Get Result Message
 Return the message describing the result of the last operation</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="216" name="access" description="public"/>
           <tag line="216" name="return" description="message describing the result of the last Memcached operation" type="string">
             <type by_reference="false">string</type>
@@ -3454,7 +3475,7 @@ Return the message describing the result of the last operation</description>
         <docblock line="227">
           <description>Replace
 Replace the item under an existing key</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="227" name="access" description="public"/>
           <tag line="227" name="param" description="Key to replace" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3471,12 +3492,12 @@ Replace the item under an existing key</description>
         </docblock>
         <argument line="237">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="237">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="237">
@@ -3491,7 +3512,7 @@ Replace the item under an existing key</description>
         <docblock line="241">
           <description>Set
 Store an item</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="241" name="access" description="public"/>
           <tag line="241" name="param" description="Key to dtore item under" type="string" variable="$key">
             <type by_reference="false">string</type>
@@ -3508,12 +3529,12 @@ Store an item</description>
         </docblock>
         <argument line="251">
           <name>$key</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="251">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="251">
@@ -3528,7 +3549,7 @@ Store an item</description>
         <docblock line="255">
           <description>Set Multi
 Store multiple items</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="255" name="access" description="public"/>
           <tag line="255" name="param" description="Key =&gt; value array of items to be stored" type="array" variable="$items">
             <type by_reference="false">array</type>
@@ -3542,7 +3563,7 @@ Store multiple items</description>
         </docblock>
         <argument line="264">
           <name>$items</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="264">
@@ -3566,7 +3587,7 @@ Store multiple items</description>
     <docblock line="19">
       <description>Session Memcached
 Memcached session handler for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -3598,7 +3619,7 @@ Initalize session storage</description>
         <docblock line="50">
           <description>Set
 Set a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="50" name="access" description="public"/>
           <tag line="50" name="param" description="Name of session" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -3612,12 +3633,12 @@ Set a session</description>
         </docblock>
         <argument line="59">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="59">
           <name>$value</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3627,7 +3648,7 @@ Set a session</description>
         <docblock line="66">
           <description>Get
 Get a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="66" name="access" description="public"/>
           <tag line="66" name="param" description="Name of session to get" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -3638,7 +3659,7 @@ Get a session</description>
         </docblock>
         <argument line="74">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3648,7 +3669,7 @@ Get a session</description>
         <docblock line="81">
           <description>Delete
 Delete a session</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="81" name="access" description="public"/>
           <tag line="81" name="param" description="Name of session to delete" type="string" variable="$name">
             <type by_reference="false">string</type>
@@ -3659,7 +3680,7 @@ Delete a session</description>
         </docblock>
         <argument line="89">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3672,7 +3693,7 @@ Delete a session</description>
     <docblock line="19">
       <description>Authentication
 Authentication class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -3683,10 +3704,10 @@ Authentication class for Powerstack</description>
       <full_name>\Powerstack\Plugins\Authentication</full_name>
       <property final="false" static="false" visibility="private" line="34" namespace="Powerstack\Plugins" package="Default">
         <name>$conf</name>
-        <default></default>
+        <default/>
         <docblock line="30">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="30" name="access" description="private"/>
           <tag line="30" name="var" description="" type="\Powerstack\Plugins\stdclass">
             <type by_reference="false">\Powerstack\Plugins\stdclass</type>
@@ -3695,10 +3716,10 @@ Authentication class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="40" namespace="Powerstack\Plugins" package="Default">
         <name>$db</name>
-        <default></default>
+        <default/>
         <docblock line="36">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="36" name="access" description="private"/>
           <tag line="36" name="var" description="" type="\Powerstack\Plugins\Powerstack\Plugins\Database">
             <type by_reference="false">\Powerstack\Plugins\Powerstack\Plugins\Database</type>
@@ -3749,7 +3770,7 @@ Create a new Powerstack\Plugins\Authenication object</description>
         <docblock line="89">
           <description>Auth
 Authenicate a user based on a userrname and password</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="89" name="access" description="public"/>
           <tag line="89" name="param" description="Username" type="string" variable="$username">
             <type by_reference="false">string</type>
@@ -3763,12 +3784,12 @@ Authenicate a user based on a userrname and password</description>
         </docblock>
         <argument line="98">
           <name>$username</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="98">
           <name>$password</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3778,7 +3799,7 @@ Authenicate a user based on a userrname and password</description>
         <docblock line="124">
           <description>Authd
 Check if the current user is authenicated</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="124" name="access" description="public"/>
           <tag line="124" name="return" description="true if user is authenicated, false otherwise" type="bool">
             <type by_reference="false">bool</type>
@@ -3791,7 +3812,7 @@ Check if the current user is authenicated</description>
         <docblock line="142">
           <description>Has Role
 Check if a user has a role assigned</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="142" name="param" description="Role to check" type="string" variable="$role">
             <type by_reference="false">string</type>
           </tag>
@@ -3801,7 +3822,7 @@ Check if a user has a role assigned</description>
         </docblock>
         <argument line="149">
           <name>$role</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3811,7 +3832,7 @@ Check if a user has a role assigned</description>
         <docblock line="164">
           <description>Hash Password
 Hash a password</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="164" name="access" description="public"/>
           <tag line="164" name="param" description="Password to hash" type="string" variable="$password">
             <type by_reference="false">string</type>
@@ -3822,7 +3843,7 @@ Hash a password</description>
         </docblock>
         <argument line="172">
           <name>$password</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3852,7 +3873,7 @@ Cron class for Powerstack</description>
         <docblock line="33">
           <description>Run
 Run all cron hooks</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="33" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
@@ -3867,7 +3888,7 @@ Run all cron hooks</description>
     <docblock line="19">
       <description>Model
 Model class for Powerstack</description>
-      <long-description></long-description>
+      <long-description/>
       <tag line="19" name="author" description="Christopher Tombleson &lt;chris@powerstack-php.org&gt;"/>
       <tag line="19" name="package" description="Powerstack"/>
       <tag line="19" name="subpackage" description="Plugins"/>
@@ -3883,8 +3904,8 @@ Model class for Powerstack</description>
         <name>$query</name>
         <default>null</default>
         <docblock line="31">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="31" name="access" description="private"/>
           <tag line="31" name="var" description="" type="string">
             <type by_reference="false">string</type>
@@ -3893,10 +3914,10 @@ Model class for Powerstack</description>
       </property>
       <property final="false" static="false" visibility="private" line="41" namespace="Powerstack\Plugins" package="Default">
         <name>$db</name>
-        <default></default>
+        <default/>
         <docblock line="37">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="37" name="access" description="private"/>
           <tag line="37" name="var" description="" type="\Powerstack\Plugins\Powerstack\Plugin\Database">
             <type by_reference="false">\Powerstack\Plugins\Powerstack\Plugin\Database</type>
@@ -3924,7 +3945,7 @@ Create a new instance of Powerstack\Plugins\Model</description>
         <docblock line="81">
           <description>Find One
 Find one record</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="81" name="access" description="public"/>
           <tag line="81" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
             <type by_reference="false">array</type>
@@ -3935,7 +3956,7 @@ Find one record</description>
         </docblock>
         <argument line="89">
           <name>$where</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -3945,7 +3966,7 @@ Find one record</description>
         <docblock line="102">
           <description>Find Many
 Find many records</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="102" name="access" description="public"/>
           <tag line="102" name="param" description="Array of where clause info. eg array('id' =&gt; 1, 'name' =&gt; 'jim', 'id' =&gt; array(1,2,3,4), 'created' =&gt; array('op' =&gt; 'gt', 'value' =&gt; 13056784))" type="array" variable="$where">
             <type by_reference="false">array</type>
@@ -3965,7 +3986,7 @@ Find many records</description>
         </docblock>
         <argument line="113">
           <name>$where</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="113">
@@ -3990,7 +4011,7 @@ Find many records</description>
         <docblock line="141">
           <description>All
 Get all records</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="141" name="access" description="public"/>
           <tag line="141" name="return" description="array of all records otherwise false" type="mixed">
             <type by_reference="false">mixed</type>
@@ -4003,7 +4024,7 @@ Get all records</description>
         <docblock line="158">
           <description>Process Where
 Process array with where info.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="158" name="access" description="private"/>
           <tag line="158" name="param" description="Array of where clause info." type="array" variable="$where">
             <type by_reference="false">array</type>
@@ -4014,7 +4035,7 @@ Process array with where info.</description>
         </docblock>
         <argument line="166">
           <name>$where</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -4024,7 +4045,7 @@ Process array with where info.</description>
         <docblock line="237">
           <description>Process Order
 Process order array</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="237" name="access" description="private"/>
           <tag line="237" name="param" description="Array of order by info" type="array" variable="$order">
             <type by_reference="false">array</type>
@@ -4035,7 +4056,7 @@ Process order array</description>
         </docblock>
         <argument line="245">
           <name>$order</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -4044,7 +4065,7 @@ Process order array</description>
         <full_name>processLimit</full_name>
         <docblock line="256">
           <description>Process Limit</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="256" name="access" description="private"/>
           <tag line="256" name="param" description="Limit records" type="int" variable="$limit">
             <type by_reference="false">int</type>
@@ -4055,7 +4076,7 @@ Process order array</description>
         </docblock>
         <argument line="263">
           <name>$limit</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -4064,7 +4085,7 @@ Process order array</description>
         <full_name>processOffset</full_name>
         <docblock line="267">
           <description>Process Offset</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="267" name="access" description="private"/>
           <tag line="267" name="param" description="Offset records" type="int" variable="$limit">
             <type by_reference="false">int</type>
@@ -4075,7 +4096,7 @@ Process order array</description>
         </docblock>
         <argument line="274">
           <name>$offset</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
