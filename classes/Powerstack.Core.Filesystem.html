@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">61</span></a></li>
+                <span class="label label-info">26</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -213,7 +213,7 @@ List All files and directories</h2>
 <a id="method_listDirs"></a><div class="element clickable method public method_listDirs" data-toggle="collapse" data-target=".method_listDirs .collapse">
 <h2>List Dirs
 List Directories</h2>
-<pre>listDirs(\Powerstack\Core\sting | array $dir, bool $recursive, $dirs) : array</pre>
+<pre>listDirs(\Powerstack\Core\sting $dir, bool $recursive, array $dirs) : array</pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -224,12 +224,15 @@ List Directories</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$dir</h4>
-<code>\Powerstack\Core\sting</code><code>array</code><p>Directory to scan</p></div>
+<code>\Powerstack\Core\sting</code><p>Directory to scan</p></div>
 <div class="subelement argument">
 <h4>$recursive</h4>
 <code>bool</code><p>Recursivly scan. (optional default is false)</p>
 </div>
-<div class="subelement argument"><h4>$dirs</h4></div>
+<div class="subelement argument">
+<h4>$dirs</h4>
+<code>array</code><p>Array of found directories. (optional default is empty array)</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>array</code>of found directories</div>
@@ -397,7 +400,7 @@ Write to a file</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-05-10T12:11:38+12:00.<br></footer></div>
+            generated on 2013-05-10T13:24:09+12:00.<br></footer></div>
 </div>
 </body>
 </html>
